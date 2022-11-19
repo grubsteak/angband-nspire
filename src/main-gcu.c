@@ -74,7 +74,7 @@
  * Hack -- Windows needs Sleep(), and I really don't want to pull in all
  *         the Win32 headers for this one function
  */
-#if defined(WIN32_CONSOLE_MODE)
+#if defined(WIN32_CONSOLE_MODE || __NSPIRE__)
 # undef USE_TPOSIX
 _stdcall void Sleep(int);
 #define usleep(v) Sleep(v / 1000)

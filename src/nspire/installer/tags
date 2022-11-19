@@ -1,0 +1,808 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Byte	miniz.h	/^typedef unsigned char Byte;$/;"	t
+Bytef	miniz.h	/^typedef Byte Bytef;$/;"	t
+CLEANUP	zip.c	53;"	d	file:
+CROSS	Makefile	/^CROSS=arm-none-eabi$/;"	m
+FILESYSTEM_PREFIX_LEN	zip.c	26;"	d	file:
+FILESYSTEM_PREFIX_LEN	zip.c	46;"	d	file:
+GCC	Makefile	/^GCC=nspire-gcc$/;"	m
+HAS_DEVICE	zip.c	23;"	d	file:
+HAS_DEVICE	zip.c	42;"	d	file:
+ISSLASH	zip.c	50;"	d	file:
+MAX_MEM_LEVEL	miniz.h	668;"	d
+MAX_PATH	zip.h	35;"	d
+MAX_WBITS	miniz.h	667;"	d
+MINIZ_HAS_64BIT_REGISTERS	miniz.h	303;"	d
+MINIZ_HEADER_INCLUDED	miniz.h	222;"	d
+MINIZ_LITTLE_ENDIAN	miniz.h	282;"	d
+MINIZ_NO_TIME	miniz.h	266;"	d
+MINIZ_UNALIGNED_USE_MEMCPY	miniz.h	291;"	d
+MINIZ_USE_UNALIGNED_LOADS_AND_STORES	miniz.h	290;"	d
+MINIZ_USE_UNALIGNED_LOADS_AND_STORES	miniz.h	293;"	d
+MINIZ_X86_OR_X64_CPU	miniz.h	277;"	d
+MKDIR	zip.c	21;"	d	file:
+MKDIR	zip.c	33;"	d	file:
+MZ_ADLER32_INIT	miniz.h	340;"	d
+MZ_ASSERT	miniz.h	1343;"	d
+MZ_BEST_COMPRESSION	miniz.h	/^  MZ_BEST_COMPRESSION = 9,$/;"	e	enum:__anon5
+MZ_BEST_SPEED	miniz.h	/^  MZ_BEST_SPEED = 1,$/;"	e	enum:__anon5
+MZ_BLOCK	miniz.h	/^  MZ_BLOCK = 5$/;"	e	enum:__anon3
+MZ_BUF_ERROR	miniz.h	/^  MZ_BUF_ERROR = -5,$/;"	e	enum:__anon4
+MZ_CLEAR_OBJ	miniz.h	1357;"	d
+MZ_CRC32_INIT	miniz.h	345;"	d
+MZ_DATA_ERROR	miniz.h	/^  MZ_DATA_ERROR = -3,$/;"	e	enum:__anon4
+MZ_DEFAULT_COMPRESSION	miniz.h	/^  MZ_DEFAULT_COMPRESSION = -1$/;"	e	enum:__anon5
+MZ_DEFAULT_LEVEL	miniz.h	/^  MZ_DEFAULT_LEVEL = 6,$/;"	e	enum:__anon5
+MZ_DEFAULT_STRATEGY	miniz.h	/^  MZ_DEFAULT_STRATEGY = 0,$/;"	e	enum:__anon1
+MZ_DEFAULT_WINDOW_BITS	miniz.h	455;"	d
+MZ_DEFLATED	miniz.h	398;"	d
+MZ_DELETE_FILE	miniz.h	4141;"	d
+MZ_DELETE_FILE	miniz.h	4157;"	d
+MZ_DELETE_FILE	miniz.h	4173;"	d
+MZ_DELETE_FILE	miniz.h	4189;"	d
+MZ_DELETE_FILE	miniz.h	4210;"	d
+MZ_ERRNO	miniz.h	/^  MZ_ERRNO = -1,$/;"	e	enum:__anon4
+MZ_FALSE	miniz.h	693;"	d
+MZ_FCLOSE	miniz.h	4132;"	d
+MZ_FCLOSE	miniz.h	4148;"	d
+MZ_FCLOSE	miniz.h	4164;"	d
+MZ_FCLOSE	miniz.h	4180;"	d
+MZ_FCLOSE	miniz.h	4196;"	d
+MZ_FFLUSH	miniz.h	4139;"	d
+MZ_FFLUSH	miniz.h	4155;"	d
+MZ_FFLUSH	miniz.h	4171;"	d
+MZ_FFLUSH	miniz.h	4187;"	d
+MZ_FFLUSH	miniz.h	4208;"	d
+MZ_FILE	miniz.h	4110;"	d
+MZ_FILE	miniz.h	4130;"	d
+MZ_FILE	miniz.h	4146;"	d
+MZ_FILE	miniz.h	4162;"	d
+MZ_FILE	miniz.h	4178;"	d
+MZ_FILE	miniz.h	4194;"	d
+MZ_FILE_STAT	miniz.h	4138;"	d
+MZ_FILE_STAT	miniz.h	4154;"	d
+MZ_FILE_STAT	miniz.h	4170;"	d
+MZ_FILE_STAT	miniz.h	4186;"	d
+MZ_FILE_STAT	miniz.h	4207;"	d
+MZ_FILE_STAT_STRUCT	miniz.h	4137;"	d
+MZ_FILE_STAT_STRUCT	miniz.h	4153;"	d
+MZ_FILE_STAT_STRUCT	miniz.h	4169;"	d
+MZ_FILE_STAT_STRUCT	miniz.h	4185;"	d
+MZ_FILE_STAT_STRUCT	miniz.h	4206;"	d
+MZ_FILTERED	miniz.h	/^  MZ_FILTERED = 1,$/;"	e	enum:__anon1
+MZ_FINISH	miniz.h	/^  MZ_FINISH = 4,$/;"	e	enum:__anon3
+MZ_FIXED	miniz.h	/^  MZ_FIXED = 4$/;"	e	enum:__anon1
+MZ_FOPEN	miniz.h	4131;"	d
+MZ_FOPEN	miniz.h	4147;"	d
+MZ_FOPEN	miniz.h	4163;"	d
+MZ_FOPEN	miniz.h	4179;"	d
+MZ_FOPEN	miniz.h	4195;"	d
+MZ_FORCEINLINE	miniz.h	1379;"	d
+MZ_FORCEINLINE	miniz.h	1381;"	d
+MZ_FORCEINLINE	miniz.h	1383;"	d
+MZ_FREAD	miniz.h	4133;"	d
+MZ_FREAD	miniz.h	4149;"	d
+MZ_FREAD	miniz.h	4165;"	d
+MZ_FREAD	miniz.h	4181;"	d
+MZ_FREAD	miniz.h	4197;"	d
+MZ_FREE	miniz.h	1347;"	d
+MZ_FREE	miniz.h	1351;"	d
+MZ_FREOPEN	miniz.h	4140;"	d
+MZ_FREOPEN	miniz.h	4156;"	d
+MZ_FREOPEN	miniz.h	4172;"	d
+MZ_FREOPEN	miniz.h	4188;"	d
+MZ_FREOPEN	miniz.h	4209;"	d
+MZ_FSEEK64	miniz.h	4136;"	d
+MZ_FSEEK64	miniz.h	4152;"	d
+MZ_FSEEK64	miniz.h	4168;"	d
+MZ_FSEEK64	miniz.h	4184;"	d
+MZ_FSEEK64	miniz.h	4201;"	d
+MZ_FSEEK64	miniz.h	4204;"	d
+MZ_FTELL64	miniz.h	4135;"	d
+MZ_FTELL64	miniz.h	4151;"	d
+MZ_FTELL64	miniz.h	4167;"	d
+MZ_FTELL64	miniz.h	4183;"	d
+MZ_FTELL64	miniz.h	4200;"	d
+MZ_FTELL64	miniz.h	4203;"	d
+MZ_FULL_FLUSH	miniz.h	/^  MZ_FULL_FLUSH = 3,$/;"	e	enum:__anon3
+MZ_FWRITE	miniz.h	4134;"	d
+MZ_FWRITE	miniz.h	4150;"	d
+MZ_FWRITE	miniz.h	4166;"	d
+MZ_FWRITE	miniz.h	4182;"	d
+MZ_FWRITE	miniz.h	4198;"	d
+MZ_HUFFMAN_ONLY	miniz.h	/^  MZ_HUFFMAN_ONLY = 2,$/;"	e	enum:__anon1
+MZ_MACRO_END	miniz.h	699;"	d
+MZ_MACRO_END	miniz.h	701;"	d
+MZ_MALLOC	miniz.h	1346;"	d
+MZ_MALLOC	miniz.h	1350;"	d
+MZ_MAX	miniz.h	1355;"	d
+MZ_MEM_ERROR	miniz.h	/^  MZ_MEM_ERROR = -4,$/;"	e	enum:__anon4
+MZ_MIN	miniz.h	1356;"	d
+MZ_NEED_DICT	miniz.h	/^  MZ_NEED_DICT = 2,$/;"	e	enum:__anon4
+MZ_NO_COMPRESSION	miniz.h	/^  MZ_NO_COMPRESSION = 0,$/;"	e	enum:__anon5
+MZ_NO_FLUSH	miniz.h	/^  MZ_NO_FLUSH = 0,$/;"	e	enum:__anon3
+MZ_OK	miniz.h	/^  MZ_OK = 0,$/;"	e	enum:__anon4
+MZ_PARAM_ERROR	miniz.h	/^  MZ_PARAM_ERROR = -10000$/;"	e	enum:__anon4
+MZ_PARTIAL_FLUSH	miniz.h	/^  MZ_PARTIAL_FLUSH = 1,$/;"	e	enum:__anon3
+MZ_PLATFORM	miniz.h	313;"	d
+MZ_PLATFORM	miniz.h	318;"	d
+MZ_PLATFORM	miniz.h	321;"	d
+MZ_READ_LE16	miniz.h	1360;"	d
+MZ_READ_LE16	miniz.h	1363;"	d
+MZ_READ_LE32	miniz.h	1361;"	d
+MZ_READ_LE32	miniz.h	1366;"	d
+MZ_READ_LE64	miniz.h	1373;"	d
+MZ_REALLOC	miniz.h	1348;"	d
+MZ_REALLOC	miniz.h	1352;"	d
+MZ_RLE	miniz.h	/^  MZ_RLE = 3,$/;"	e	enum:__anon1
+MZ_STREAM_END	miniz.h	/^  MZ_STREAM_END = 1,$/;"	e	enum:__anon4
+MZ_STREAM_ERROR	miniz.h	/^  MZ_STREAM_ERROR = -2,$/;"	e	enum:__anon4
+MZ_SWAP_UINT32	miniz.h	4552;"	d
+MZ_SYNC_FLUSH	miniz.h	/^  MZ_SYNC_FLUSH = 2,$/;"	e	enum:__anon3
+MZ_TOLOWER	miniz.h	4214;"	d
+MZ_TRUE	miniz.h	694;"	d
+MZ_UBER_COMPRESSION	miniz.h	/^  MZ_UBER_COMPRESSION = 10,$/;"	e	enum:__anon5
+MZ_UINT16_MAX	miniz.h	1322;"	d
+MZ_UINT32_MAX	miniz.h	1323;"	d
+MZ_VERNUM	miniz.h	411;"	d
+MZ_VERSION	miniz.h	410;"	d
+MZ_VERSION_ERROR	miniz.h	/^  MZ_VERSION_ERROR = -6,$/;"	e	enum:__anon4
+MZ_VER_MAJOR	miniz.h	412;"	d
+MZ_VER_MINOR	miniz.h	413;"	d
+MZ_VER_REVISION	miniz.h	414;"	d
+MZ_VER_SUBREVISION	miniz.h	415;"	d
+MZ_WRITE_LE16	miniz.h	5772;"	d
+MZ_WRITE_LE32	miniz.h	5773;"	d
+MZ_ZIP64_ECDH_CDIR_NUM_ENTRIES_ON_DISK_OFS	miniz.h	/^  MZ_ZIP64_ECDH_CDIR_NUM_ENTRIES_ON_DISK_OFS = 24, \/* 8 bytes *\/$/;"	e	enum:__anon28
+MZ_ZIP64_ECDH_CDIR_OFS_OFS	miniz.h	/^  MZ_ZIP64_ECDH_CDIR_OFS_OFS = 48,                 \/* 8 bytes *\/$/;"	e	enum:__anon28
+MZ_ZIP64_ECDH_CDIR_SIZE_OFS	miniz.h	/^  MZ_ZIP64_ECDH_CDIR_SIZE_OFS = 40,                \/* 8 bytes *\/$/;"	e	enum:__anon28
+MZ_ZIP64_ECDH_CDIR_TOTAL_ENTRIES_OFS	miniz.h	/^  MZ_ZIP64_ECDH_CDIR_TOTAL_ENTRIES_OFS = 32,       \/* 8 bytes *\/$/;"	e	enum:__anon28
+MZ_ZIP64_ECDH_NUM_DISK_CDIR_OFS	miniz.h	/^  MZ_ZIP64_ECDH_NUM_DISK_CDIR_OFS = 20,            \/* 4 bytes *\/$/;"	e	enum:__anon28
+MZ_ZIP64_ECDH_NUM_THIS_DISK_OFS	miniz.h	/^  MZ_ZIP64_ECDH_NUM_THIS_DISK_OFS = 16,            \/* 4 bytes *\/$/;"	e	enum:__anon28
+MZ_ZIP64_ECDH_SIG_OFS	miniz.h	/^  MZ_ZIP64_ECDH_SIG_OFS = 0,                       \/* 4 bytes *\/$/;"	e	enum:__anon28
+MZ_ZIP64_ECDH_SIZE_OF_RECORD_OFS	miniz.h	/^  MZ_ZIP64_ECDH_SIZE_OF_RECORD_OFS = 4,            \/* 8 bytes *\/$/;"	e	enum:__anon28
+MZ_ZIP64_ECDH_VERSION_MADE_BY_OFS	miniz.h	/^  MZ_ZIP64_ECDH_VERSION_MADE_BY_OFS = 12,          \/* 2 bytes *\/$/;"	e	enum:__anon28
+MZ_ZIP64_ECDH_VERSION_NEEDED_OFS	miniz.h	/^  MZ_ZIP64_ECDH_VERSION_NEEDED_OFS = 14,           \/* 2 bytes *\/$/;"	e	enum:__anon28
+MZ_ZIP64_ECDL_NUM_DISK_CDIR_OFS	miniz.h	/^  MZ_ZIP64_ECDL_NUM_DISK_CDIR_OFS = 4,          \/* 4 bytes *\/$/;"	e	enum:__anon28
+MZ_ZIP64_ECDL_REL_OFS_TO_ZIP64_ECDR_OFS	miniz.h	/^  MZ_ZIP64_ECDL_REL_OFS_TO_ZIP64_ECDR_OFS = 8,  \/* 8 bytes *\/$/;"	e	enum:__anon28
+MZ_ZIP64_ECDL_SIG_OFS	miniz.h	/^  MZ_ZIP64_ECDL_SIG_OFS = 0,                    \/* 4 bytes *\/$/;"	e	enum:__anon28
+MZ_ZIP64_ECDL_TOTAL_NUMBER_OF_DISKS_OFS	miniz.h	/^  MZ_ZIP64_ECDL_TOTAL_NUMBER_OF_DISKS_OFS = 16, \/* 4 bytes *\/$/;"	e	enum:__anon28
+MZ_ZIP64_END_OF_CENTRAL_DIR_HEADER_SIG	miniz.h	/^  MZ_ZIP64_END_OF_CENTRAL_DIR_HEADER_SIG = 0x06064b50,$/;"	e	enum:__anon28
+MZ_ZIP64_END_OF_CENTRAL_DIR_HEADER_SIZE	miniz.h	/^  MZ_ZIP64_END_OF_CENTRAL_DIR_HEADER_SIZE = 56,$/;"	e	enum:__anon28
+MZ_ZIP64_END_OF_CENTRAL_DIR_LOCATOR_SIG	miniz.h	/^  MZ_ZIP64_END_OF_CENTRAL_DIR_LOCATOR_SIG = 0x07064b50,$/;"	e	enum:__anon28
+MZ_ZIP64_END_OF_CENTRAL_DIR_LOCATOR_SIZE	miniz.h	/^  MZ_ZIP64_END_OF_CENTRAL_DIR_LOCATOR_SIZE = 20,$/;"	e	enum:__anon28
+MZ_ZIP64_EXTENDED_INFORMATION_FIELD_HEADER_ID	miniz.h	/^  MZ_ZIP64_EXTENDED_INFORMATION_FIELD_HEADER_ID = 0x0001,$/;"	e	enum:__anon28
+MZ_ZIP_ALLOC_FAILED	miniz.h	/^  MZ_ZIP_ALLOC_FAILED,$/;"	e	enum:__anon2
+MZ_ZIP_ARCHIVE_TOO_LARGE	miniz.h	/^  MZ_ZIP_ARCHIVE_TOO_LARGE,$/;"	e	enum:__anon2
+MZ_ZIP_ARRAY_ELEMENT	miniz.h	4339;"	d
+MZ_ZIP_ARRAY_SET_ELEMENT_SIZE	miniz.h	4337;"	d
+MZ_ZIP_BUF_TOO_SMALL	miniz.h	/^  MZ_ZIP_BUF_TOO_SMALL,$/;"	e	enum:__anon2
+MZ_ZIP_CDH_BIT_FLAG_OFS	miniz.h	/^  MZ_ZIP_CDH_BIT_FLAG_OFS = 8,$/;"	e	enum:__anon28
+MZ_ZIP_CDH_COMMENT_LEN_OFS	miniz.h	/^  MZ_ZIP_CDH_COMMENT_LEN_OFS = 32,$/;"	e	enum:__anon28
+MZ_ZIP_CDH_COMPRESSED_SIZE_OFS	miniz.h	/^  MZ_ZIP_CDH_COMPRESSED_SIZE_OFS = 20,$/;"	e	enum:__anon28
+MZ_ZIP_CDH_CRC32_OFS	miniz.h	/^  MZ_ZIP_CDH_CRC32_OFS = 16,$/;"	e	enum:__anon28
+MZ_ZIP_CDH_DECOMPRESSED_SIZE_OFS	miniz.h	/^  MZ_ZIP_CDH_DECOMPRESSED_SIZE_OFS = 24,$/;"	e	enum:__anon28
+MZ_ZIP_CDH_DISK_START_OFS	miniz.h	/^  MZ_ZIP_CDH_DISK_START_OFS = 34,$/;"	e	enum:__anon28
+MZ_ZIP_CDH_EXTERNAL_ATTR_OFS	miniz.h	/^  MZ_ZIP_CDH_EXTERNAL_ATTR_OFS = 38,$/;"	e	enum:__anon28
+MZ_ZIP_CDH_EXTRA_LEN_OFS	miniz.h	/^  MZ_ZIP_CDH_EXTRA_LEN_OFS = 30,$/;"	e	enum:__anon28
+MZ_ZIP_CDH_FILENAME_LEN_OFS	miniz.h	/^  MZ_ZIP_CDH_FILENAME_LEN_OFS = 28,$/;"	e	enum:__anon28
+MZ_ZIP_CDH_FILE_DATE_OFS	miniz.h	/^  MZ_ZIP_CDH_FILE_DATE_OFS = 14,$/;"	e	enum:__anon28
+MZ_ZIP_CDH_FILE_TIME_OFS	miniz.h	/^  MZ_ZIP_CDH_FILE_TIME_OFS = 12,$/;"	e	enum:__anon28
+MZ_ZIP_CDH_INTERNAL_ATTR_OFS	miniz.h	/^  MZ_ZIP_CDH_INTERNAL_ATTR_OFS = 36,$/;"	e	enum:__anon28
+MZ_ZIP_CDH_LOCAL_HEADER_OFS	miniz.h	/^  MZ_ZIP_CDH_LOCAL_HEADER_OFS = 42,$/;"	e	enum:__anon28
+MZ_ZIP_CDH_METHOD_OFS	miniz.h	/^  MZ_ZIP_CDH_METHOD_OFS = 10,$/;"	e	enum:__anon28
+MZ_ZIP_CDH_SIG_OFS	miniz.h	/^  MZ_ZIP_CDH_SIG_OFS = 0,$/;"	e	enum:__anon28
+MZ_ZIP_CDH_VERSION_MADE_BY_OFS	miniz.h	/^  MZ_ZIP_CDH_VERSION_MADE_BY_OFS = 4,$/;"	e	enum:__anon28
+MZ_ZIP_CDH_VERSION_NEEDED_OFS	miniz.h	/^  MZ_ZIP_CDH_VERSION_NEEDED_OFS = 6,$/;"	e	enum:__anon28
+MZ_ZIP_CENTRAL_DIR_HEADER_SIG	miniz.h	/^  MZ_ZIP_CENTRAL_DIR_HEADER_SIG = 0x02014b50,$/;"	e	enum:__anon28
+MZ_ZIP_CENTRAL_DIR_HEADER_SIZE	miniz.h	/^  MZ_ZIP_CENTRAL_DIR_HEADER_SIZE = 46,$/;"	e	enum:__anon28
+MZ_ZIP_COMPRESSION_FAILED	miniz.h	/^  MZ_ZIP_COMPRESSION_FAILED,$/;"	e	enum:__anon2
+MZ_ZIP_CRC_CHECK_FAILED	miniz.h	/^  MZ_ZIP_CRC_CHECK_FAILED,$/;"	e	enum:__anon2
+MZ_ZIP_DATA_DESCRIPTER_SIZE32	miniz.h	/^  MZ_ZIP_DATA_DESCRIPTER_SIZE32 = 16,$/;"	e	enum:__anon28
+MZ_ZIP_DATA_DESCRIPTER_SIZE64	miniz.h	/^  MZ_ZIP_DATA_DESCRIPTER_SIZE64 = 24,$/;"	e	enum:__anon28
+MZ_ZIP_DATA_DESCRIPTOR_ID	miniz.h	/^  MZ_ZIP_DATA_DESCRIPTOR_ID = 0x08074b50,$/;"	e	enum:__anon28
+MZ_ZIP_DECOMPRESSION_FAILED	miniz.h	/^  MZ_ZIP_DECOMPRESSION_FAILED,$/;"	e	enum:__anon2
+MZ_ZIP_DOS_DIR_ATTRIBUTE_BITFLAG	miniz.h	/^  MZ_ZIP_DOS_DIR_ATTRIBUTE_BITFLAG = 0x10,$/;"	e	enum:__anon28
+MZ_ZIP_ECDH_CDIR_NUM_ENTRIES_ON_DISK_OFS	miniz.h	/^  MZ_ZIP_ECDH_CDIR_NUM_ENTRIES_ON_DISK_OFS = 8,$/;"	e	enum:__anon28
+MZ_ZIP_ECDH_CDIR_OFS_OFS	miniz.h	/^  MZ_ZIP_ECDH_CDIR_OFS_OFS = 16,$/;"	e	enum:__anon28
+MZ_ZIP_ECDH_CDIR_SIZE_OFS	miniz.h	/^  MZ_ZIP_ECDH_CDIR_SIZE_OFS = 12,$/;"	e	enum:__anon28
+MZ_ZIP_ECDH_CDIR_TOTAL_ENTRIES_OFS	miniz.h	/^  MZ_ZIP_ECDH_CDIR_TOTAL_ENTRIES_OFS = 10,$/;"	e	enum:__anon28
+MZ_ZIP_ECDH_COMMENT_SIZE_OFS	miniz.h	/^  MZ_ZIP_ECDH_COMMENT_SIZE_OFS = 20,$/;"	e	enum:__anon28
+MZ_ZIP_ECDH_NUM_DISK_CDIR_OFS	miniz.h	/^  MZ_ZIP_ECDH_NUM_DISK_CDIR_OFS = 6,$/;"	e	enum:__anon28
+MZ_ZIP_ECDH_NUM_THIS_DISK_OFS	miniz.h	/^  MZ_ZIP_ECDH_NUM_THIS_DISK_OFS = 4,$/;"	e	enum:__anon28
+MZ_ZIP_ECDH_SIG_OFS	miniz.h	/^  MZ_ZIP_ECDH_SIG_OFS = 0,$/;"	e	enum:__anon28
+MZ_ZIP_END_OF_CENTRAL_DIR_HEADER_SIG	miniz.h	/^  MZ_ZIP_END_OF_CENTRAL_DIR_HEADER_SIG = 0x06054b50,$/;"	e	enum:__anon28
+MZ_ZIP_END_OF_CENTRAL_DIR_HEADER_SIZE	miniz.h	/^  MZ_ZIP_END_OF_CENTRAL_DIR_HEADER_SIZE = 22,$/;"	e	enum:__anon28
+MZ_ZIP_FAILED_FINDING_CENTRAL_DIR	miniz.h	/^  MZ_ZIP_FAILED_FINDING_CENTRAL_DIR,$/;"	e	enum:__anon2
+MZ_ZIP_FILE_CLOSE_FAILED	miniz.h	/^  MZ_ZIP_FILE_CLOSE_FAILED,$/;"	e	enum:__anon2
+MZ_ZIP_FILE_CREATE_FAILED	miniz.h	/^  MZ_ZIP_FILE_CREATE_FAILED,$/;"	e	enum:__anon2
+MZ_ZIP_FILE_NOT_FOUND	miniz.h	/^  MZ_ZIP_FILE_NOT_FOUND,$/;"	e	enum:__anon2
+MZ_ZIP_FILE_OPEN_FAILED	miniz.h	/^  MZ_ZIP_FILE_OPEN_FAILED,$/;"	e	enum:__anon2
+MZ_ZIP_FILE_READ_FAILED	miniz.h	/^  MZ_ZIP_FILE_READ_FAILED,$/;"	e	enum:__anon2
+MZ_ZIP_FILE_SEEK_FAILED	miniz.h	/^  MZ_ZIP_FILE_SEEK_FAILED,$/;"	e	enum:__anon2
+MZ_ZIP_FILE_STAT_FAILED	miniz.h	/^  MZ_ZIP_FILE_STAT_FAILED,$/;"	e	enum:__anon2
+MZ_ZIP_FILE_TOO_LARGE	miniz.h	/^  MZ_ZIP_FILE_TOO_LARGE,$/;"	e	enum:__anon2
+MZ_ZIP_FILE_WRITE_FAILED	miniz.h	/^  MZ_ZIP_FILE_WRITE_FAILED,$/;"	e	enum:__anon2
+MZ_ZIP_FLAG_CASE_SENSITIVE	miniz.h	/^  MZ_ZIP_FLAG_CASE_SENSITIVE = 0x0100,$/;"	e	enum:__anon11
+MZ_ZIP_FLAG_COMPRESSED_DATA	miniz.h	/^  MZ_ZIP_FLAG_COMPRESSED_DATA = 0x0400,$/;"	e	enum:__anon11
+MZ_ZIP_FLAG_DO_NOT_SORT_CENTRAL_DIRECTORY	miniz.h	/^  MZ_ZIP_FLAG_DO_NOT_SORT_CENTRAL_DIRECTORY = 0x0800$/;"	e	enum:__anon11
+MZ_ZIP_FLAG_IGNORE_PATH	miniz.h	/^  MZ_ZIP_FLAG_IGNORE_PATH = 0x0200,$/;"	e	enum:__anon11
+MZ_ZIP_GENERAL_PURPOSE_BIT_FLAG_COMPRESSED_PATCH_FLAG	miniz.h	/^  MZ_ZIP_GENERAL_PURPOSE_BIT_FLAG_COMPRESSED_PATCH_FLAG = 32,$/;"	e	enum:__anon28
+MZ_ZIP_GENERAL_PURPOSE_BIT_FLAG_IS_ENCRYPTED	miniz.h	/^  MZ_ZIP_GENERAL_PURPOSE_BIT_FLAG_IS_ENCRYPTED = 1,$/;"	e	enum:__anon28
+MZ_ZIP_GENERAL_PURPOSE_BIT_FLAG_LOCAL_DIR_IS_MASKED	miniz.h	/^  MZ_ZIP_GENERAL_PURPOSE_BIT_FLAG_LOCAL_DIR_IS_MASKED = 8192,$/;"	e	enum:__anon28
+MZ_ZIP_GENERAL_PURPOSE_BIT_FLAG_USES_STRONG_ENCRYPTION	miniz.h	/^  MZ_ZIP_GENERAL_PURPOSE_BIT_FLAG_USES_STRONG_ENCRYPTION = 64,$/;"	e	enum:__anon28
+MZ_ZIP_GENERAL_PURPOSE_BIT_FLAG_UTF8	miniz.h	/^  MZ_ZIP_GENERAL_PURPOSE_BIT_FLAG_UTF8 = 1 << 11$/;"	e	enum:__anon28
+MZ_ZIP_INTERNAL_ERROR	miniz.h	/^  MZ_ZIP_INTERNAL_ERROR,$/;"	e	enum:__anon2
+MZ_ZIP_INVALID_FILENAME	miniz.h	/^  MZ_ZIP_INVALID_FILENAME,$/;"	e	enum:__anon2
+MZ_ZIP_INVALID_HEADER_OR_CORRUPTED	miniz.h	/^  MZ_ZIP_INVALID_HEADER_OR_CORRUPTED,$/;"	e	enum:__anon2
+MZ_ZIP_INVALID_PARAMETER	miniz.h	/^  MZ_ZIP_INVALID_PARAMETER,$/;"	e	enum:__anon2
+MZ_ZIP_LDH_BIT_FLAG_OFS	miniz.h	/^  MZ_ZIP_LDH_BIT_FLAG_OFS = 6,$/;"	e	enum:__anon28
+MZ_ZIP_LDH_COMPRESSED_SIZE_OFS	miniz.h	/^  MZ_ZIP_LDH_COMPRESSED_SIZE_OFS = 18,$/;"	e	enum:__anon28
+MZ_ZIP_LDH_CRC32_OFS	miniz.h	/^  MZ_ZIP_LDH_CRC32_OFS = 14,$/;"	e	enum:__anon28
+MZ_ZIP_LDH_DECOMPRESSED_SIZE_OFS	miniz.h	/^  MZ_ZIP_LDH_DECOMPRESSED_SIZE_OFS = 22,$/;"	e	enum:__anon28
+MZ_ZIP_LDH_EXTRA_LEN_OFS	miniz.h	/^  MZ_ZIP_LDH_EXTRA_LEN_OFS = 28,$/;"	e	enum:__anon28
+MZ_ZIP_LDH_FILENAME_LEN_OFS	miniz.h	/^  MZ_ZIP_LDH_FILENAME_LEN_OFS = 26,$/;"	e	enum:__anon28
+MZ_ZIP_LDH_FILE_DATE_OFS	miniz.h	/^  MZ_ZIP_LDH_FILE_DATE_OFS = 12,$/;"	e	enum:__anon28
+MZ_ZIP_LDH_FILE_TIME_OFS	miniz.h	/^  MZ_ZIP_LDH_FILE_TIME_OFS = 10,$/;"	e	enum:__anon28
+MZ_ZIP_LDH_METHOD_OFS	miniz.h	/^  MZ_ZIP_LDH_METHOD_OFS = 8,$/;"	e	enum:__anon28
+MZ_ZIP_LDH_SIG_OFS	miniz.h	/^  MZ_ZIP_LDH_SIG_OFS = 0,$/;"	e	enum:__anon28
+MZ_ZIP_LDH_VERSION_NEEDED_OFS	miniz.h	/^  MZ_ZIP_LDH_VERSION_NEEDED_OFS = 4,$/;"	e	enum:__anon28
+MZ_ZIP_LOCAL_DIR_HEADER_SIG	miniz.h	/^  MZ_ZIP_LOCAL_DIR_HEADER_SIG = 0x04034b50,$/;"	e	enum:__anon28
+MZ_ZIP_LOCAL_DIR_HEADER_SIZE	miniz.h	/^  MZ_ZIP_LOCAL_DIR_HEADER_SIZE = 30,$/;"	e	enum:__anon28
+MZ_ZIP_MAX_ARCHIVE_FILENAME_SIZE	miniz.h	/^  MZ_ZIP_MAX_ARCHIVE_FILENAME_SIZE = 260,$/;"	e	enum:__anon6
+MZ_ZIP_MAX_ARCHIVE_FILE_COMMENT_SIZE	miniz.h	/^  MZ_ZIP_MAX_ARCHIVE_FILE_COMMENT_SIZE = 256$/;"	e	enum:__anon6
+MZ_ZIP_MAX_IO_BUF_SIZE	miniz.h	/^  MZ_ZIP_MAX_IO_BUF_SIZE = 64 * 1024,$/;"	e	enum:__anon6
+MZ_ZIP_MODE_INVALID	miniz.h	/^  MZ_ZIP_MODE_INVALID = 0,$/;"	e	enum:__anon8
+MZ_ZIP_MODE_READING	miniz.h	/^  MZ_ZIP_MODE_READING = 1,$/;"	e	enum:__anon8
+MZ_ZIP_MODE_WRITING	miniz.h	/^  MZ_ZIP_MODE_WRITING = 2,$/;"	e	enum:__anon8
+MZ_ZIP_MODE_WRITING_HAS_BEEN_FINALIZED	miniz.h	/^  MZ_ZIP_MODE_WRITING_HAS_BEEN_FINALIZED = 3$/;"	e	enum:__anon8
+MZ_ZIP_NOT_AN_ARCHIVE	miniz.h	/^  MZ_ZIP_NOT_AN_ARCHIVE,$/;"	e	enum:__anon2
+MZ_ZIP_NO_ERROR	miniz.h	/^  MZ_ZIP_NO_ERROR = 0,$/;"	e	enum:__anon2
+MZ_ZIP_TOO_MANY_FILES	miniz.h	/^  MZ_ZIP_TOO_MANY_FILES,$/;"	e	enum:__anon2
+MZ_ZIP_TOTAL_ERRORS	miniz.h	/^  MZ_ZIP_TOTAL_ERRORS$/;"	e	enum:__anon2
+MZ_ZIP_TOTAL_TYPES	miniz.h	/^  MZ_ZIP_TOTAL_TYPES$/;"	e	enum:__anon9
+MZ_ZIP_TYPE_CFILE	miniz.h	/^  MZ_ZIP_TYPE_CFILE,$/;"	e	enum:__anon9
+MZ_ZIP_TYPE_FILE	miniz.h	/^  MZ_ZIP_TYPE_FILE,$/;"	e	enum:__anon9
+MZ_ZIP_TYPE_HEAP	miniz.h	/^  MZ_ZIP_TYPE_HEAP,$/;"	e	enum:__anon9
+MZ_ZIP_TYPE_INVALID	miniz.h	/^  MZ_ZIP_TYPE_INVALID = 0,$/;"	e	enum:__anon9
+MZ_ZIP_TYPE_MEMORY	miniz.h	/^  MZ_ZIP_TYPE_MEMORY,$/;"	e	enum:__anon9
+MZ_ZIP_TYPE_USER	miniz.h	/^  MZ_ZIP_TYPE_USER,$/;"	e	enum:__anon9
+MZ_ZIP_UNDEFINED_ERROR	miniz.h	/^  MZ_ZIP_UNDEFINED_ERROR,$/;"	e	enum:__anon2
+MZ_ZIP_UNEXPECTED_DECOMPRESSED_SIZE	miniz.h	/^  MZ_ZIP_UNEXPECTED_DECOMPRESSED_SIZE,$/;"	e	enum:__anon2
+MZ_ZIP_UNSUPPORTED_CDIR_SIZE	miniz.h	/^  MZ_ZIP_UNSUPPORTED_CDIR_SIZE,$/;"	e	enum:__anon2
+MZ_ZIP_UNSUPPORTED_ENCRYPTION	miniz.h	/^  MZ_ZIP_UNSUPPORTED_ENCRYPTION,$/;"	e	enum:__anon2
+MZ_ZIP_UNSUPPORTED_FEATURE	miniz.h	/^  MZ_ZIP_UNSUPPORTED_FEATURE,$/;"	e	enum:__anon2
+MZ_ZIP_UNSUPPORTED_METHOD	miniz.h	/^  MZ_ZIP_UNSUPPORTED_METHOD,$/;"	e	enum:__anon2
+MZ_ZIP_UNSUPPORTED_MULTIDISK	miniz.h	/^  MZ_ZIP_UNSUPPORTED_MULTIDISK,$/;"	e	enum:__anon2
+MZ_ZIP_VALIDATION_FAILED	miniz.h	/^  MZ_ZIP_VALIDATION_FAILED,$/;"	e	enum:__anon2
+MZ_ZIP_VERSION_MADE_BY_DOS_FILESYSTEM_ID	miniz.h	/^  MZ_ZIP_VERSION_MADE_BY_DOS_FILESYSTEM_ID = 0,$/;"	e	enum:__anon28
+MZ_ZIP_WRITE_CALLBACK_FAILED	miniz.h	/^  MZ_ZIP_WRITE_CALLBACK_FAILED,$/;"	e	enum:__anon2
+STRCLONE	zip.c	22;"	d	file:
+STRCLONE	zip.c	34;"	d	file:
+TARGET	Makefile	/^TARGET=cataclysm-installer$/;"	m
+TDEFL_COMPUTE_ADLER32	miniz.h	/^  TDEFL_COMPUTE_ADLER32 = 0x02000,$/;"	e	enum:__anon17
+TDEFL_DEFAULT_MAX_PROBES	miniz.h	/^  TDEFL_DEFAULT_MAX_PROBES = 128,$/;"	e	enum:__anon16
+TDEFL_FILTER_MATCHES	miniz.h	/^  TDEFL_FILTER_MATCHES = 0x20000,$/;"	e	enum:__anon17
+TDEFL_FINISH	miniz.h	/^  TDEFL_FINISH = 4$/;"	e	enum:__anon22
+TDEFL_FORCE_ALL_RAW_BLOCKS	miniz.h	/^  TDEFL_FORCE_ALL_RAW_BLOCKS = 0x80000$/;"	e	enum:__anon17
+TDEFL_FORCE_ALL_STATIC_BLOCKS	miniz.h	/^  TDEFL_FORCE_ALL_STATIC_BLOCKS = 0x40000,$/;"	e	enum:__anon17
+TDEFL_FULL_FLUSH	miniz.h	/^  TDEFL_FULL_FLUSH = 3,$/;"	e	enum:__anon22
+TDEFL_GREEDY_PARSING_FLAG	miniz.h	/^  TDEFL_GREEDY_PARSING_FLAG = 0x04000,$/;"	e	enum:__anon17
+TDEFL_HUFFMAN_ONLY	miniz.h	/^  TDEFL_HUFFMAN_ONLY = 0,$/;"	e	enum:__anon16
+TDEFL_LESS_MEMORY	miniz.h	1111;"	d
+TDEFL_LEVEL1_HASH_SIZE_MASK	miniz.h	/^  TDEFL_LEVEL1_HASH_SIZE_MASK = 4095,$/;"	e	enum:__anon19
+TDEFL_LEVEL1_HASH_SIZE_MASK	miniz.h	/^  TDEFL_LEVEL1_HASH_SIZE_MASK = 4095,$/;"	e	enum:__anon20
+TDEFL_LZ_CODE_BUF_SIZE	miniz.h	/^  TDEFL_LZ_CODE_BUF_SIZE = 24 * 1024,$/;"	e	enum:__anon19
+TDEFL_LZ_CODE_BUF_SIZE	miniz.h	/^  TDEFL_LZ_CODE_BUF_SIZE = 64 * 1024,$/;"	e	enum:__anon20
+TDEFL_LZ_DICT_SIZE	miniz.h	/^  TDEFL_LZ_DICT_SIZE = 32768,$/;"	e	enum:__anon18
+TDEFL_LZ_DICT_SIZE_MASK	miniz.h	/^  TDEFL_LZ_DICT_SIZE_MASK = TDEFL_LZ_DICT_SIZE - 1,$/;"	e	enum:__anon18
+TDEFL_LZ_HASH_BITS	miniz.h	/^  TDEFL_LZ_HASH_BITS = 12,$/;"	e	enum:__anon19
+TDEFL_LZ_HASH_BITS	miniz.h	/^  TDEFL_LZ_HASH_BITS = 15,$/;"	e	enum:__anon20
+TDEFL_LZ_HASH_SHIFT	miniz.h	/^  TDEFL_LZ_HASH_SHIFT = (TDEFL_LZ_HASH_BITS + 2) \/ 3,$/;"	e	enum:__anon19
+TDEFL_LZ_HASH_SHIFT	miniz.h	/^  TDEFL_LZ_HASH_SHIFT = (TDEFL_LZ_HASH_BITS + 2) \/ 3,$/;"	e	enum:__anon20
+TDEFL_LZ_HASH_SIZE	miniz.h	/^  TDEFL_LZ_HASH_SIZE = 1 << TDEFL_LZ_HASH_BITS$/;"	e	enum:__anon19
+TDEFL_LZ_HASH_SIZE	miniz.h	/^  TDEFL_LZ_HASH_SIZE = 1 << TDEFL_LZ_HASH_BITS$/;"	e	enum:__anon20
+TDEFL_MAX_HUFF_SYMBOLS	miniz.h	/^  TDEFL_MAX_HUFF_SYMBOLS = 288,$/;"	e	enum:__anon19
+TDEFL_MAX_HUFF_SYMBOLS	miniz.h	/^  TDEFL_MAX_HUFF_SYMBOLS = 288,$/;"	e	enum:__anon20
+TDEFL_MAX_HUFF_SYMBOLS_0	miniz.h	/^  TDEFL_MAX_HUFF_SYMBOLS_0 = 288,$/;"	e	enum:__anon18
+TDEFL_MAX_HUFF_SYMBOLS_1	miniz.h	/^  TDEFL_MAX_HUFF_SYMBOLS_1 = 32,$/;"	e	enum:__anon18
+TDEFL_MAX_HUFF_SYMBOLS_2	miniz.h	/^  TDEFL_MAX_HUFF_SYMBOLS_2 = 19,$/;"	e	enum:__anon18
+TDEFL_MAX_HUFF_TABLES	miniz.h	/^  TDEFL_MAX_HUFF_TABLES = 3,$/;"	e	enum:__anon18
+TDEFL_MAX_MATCH_LEN	miniz.h	/^  TDEFL_MAX_MATCH_LEN = 258$/;"	e	enum:__anon18
+TDEFL_MAX_PROBES_MASK	miniz.h	/^  TDEFL_MAX_PROBES_MASK = 0xFFF$/;"	e	enum:__anon16
+TDEFL_MAX_SUPPORTED_HUFF_CODESIZE	miniz.h	/^enum { TDEFL_MAX_SUPPORTED_HUFF_CODESIZE = 32 };$/;"	e	enum:__anon26
+TDEFL_MIN_MATCH_LEN	miniz.h	/^  TDEFL_MIN_MATCH_LEN = 3,$/;"	e	enum:__anon18
+TDEFL_NONDETERMINISTIC_PARSING_FLAG	miniz.h	/^  TDEFL_NONDETERMINISTIC_PARSING_FLAG = 0x08000,$/;"	e	enum:__anon17
+TDEFL_NO_FLUSH	miniz.h	/^  TDEFL_NO_FLUSH = 0,$/;"	e	enum:__anon22
+TDEFL_OUT_BUF_SIZE	miniz.h	/^  TDEFL_OUT_BUF_SIZE = (TDEFL_LZ_CODE_BUF_SIZE * 13) \/ 10,$/;"	e	enum:__anon19
+TDEFL_OUT_BUF_SIZE	miniz.h	/^  TDEFL_OUT_BUF_SIZE = (TDEFL_LZ_CODE_BUF_SIZE * 13) \/ 10,$/;"	e	enum:__anon20
+TDEFL_PROBE	miniz.h	3268;"	d
+TDEFL_PROBE	miniz.h	3323;"	d
+TDEFL_PUT_BITS	miniz.h	2798;"	d
+TDEFL_PUT_BITS_FAST	miniz.h	2979;"	d
+TDEFL_PUT_BITS_FAST	miniz.h	3048;"	d
+TDEFL_READ_UNALIGNED_WORD	miniz.h	3249;"	d
+TDEFL_RLE_MATCHES	miniz.h	/^  TDEFL_RLE_MATCHES = 0x10000,$/;"	e	enum:__anon17
+TDEFL_RLE_PREV_CODE_SIZE	miniz.h	2814;"	d
+TDEFL_RLE_ZERO_CODE_SIZE	miniz.h	2832;"	d
+TDEFL_STATUS_BAD_PARAM	miniz.h	/^  TDEFL_STATUS_BAD_PARAM = -2,$/;"	e	enum:__anon21
+TDEFL_STATUS_DONE	miniz.h	/^  TDEFL_STATUS_DONE = 1,$/;"	e	enum:__anon21
+TDEFL_STATUS_OKAY	miniz.h	/^  TDEFL_STATUS_OKAY = 0,$/;"	e	enum:__anon21
+TDEFL_STATUS_PUT_BUF_FAILED	miniz.h	/^  TDEFL_STATUS_PUT_BUF_FAILED = -1,$/;"	e	enum:__anon21
+TDEFL_SYNC_FLUSH	miniz.h	/^  TDEFL_SYNC_FLUSH = 2,$/;"	e	enum:__anon22
+TDEFL_WRITE_ZLIB_HEADER	miniz.h	/^  TDEFL_WRITE_ZLIB_HEADER = 0x01000,$/;"	e	enum:__anon17
+TINFL_BITBUF_SIZE	miniz.h	1090;"	d
+TINFL_BITBUF_SIZE	miniz.h	1093;"	d
+TINFL_CR_BEGIN	miniz.h	1865;"	d
+TINFL_CR_FINISH	miniz.h	1883;"	d
+TINFL_CR_RETURN	miniz.h	1868;"	d
+TINFL_CR_RETURN_FOREVER	miniz.h	1876;"	d
+TINFL_DECOMPRESS_MEM_TO_MEM_FAILED	miniz.h	1019;"	d
+TINFL_FAST_LOOKUP_BITS	miniz.h	/^  TINFL_FAST_LOOKUP_BITS = 10,$/;"	e	enum:__anon14
+TINFL_FAST_LOOKUP_SIZE	miniz.h	/^  TINFL_FAST_LOOKUP_SIZE = 1 << TINFL_FAST_LOOKUP_BITS$/;"	e	enum:__anon14
+TINFL_FLAG_COMPUTE_ADLER32	miniz.h	/^  TINFL_FLAG_COMPUTE_ADLER32 = 8$/;"	e	enum:__anon12
+TINFL_FLAG_HAS_MORE_INPUT	miniz.h	/^  TINFL_FLAG_HAS_MORE_INPUT = 2,$/;"	e	enum:__anon12
+TINFL_FLAG_PARSE_ZLIB_HEADER	miniz.h	/^  TINFL_FLAG_PARSE_ZLIB_HEADER = 1,$/;"	e	enum:__anon12
+TINFL_FLAG_USING_NON_WRAPPING_OUTPUT_BUF	miniz.h	/^  TINFL_FLAG_USING_NON_WRAPPING_OUTPUT_BUF = 4,$/;"	e	enum:__anon12
+TINFL_GET_BITS	miniz.h	1925;"	d
+TINFL_GET_BYTE	miniz.h	1889;"	d
+TINFL_HUFF_BITBUF_FILL	miniz.h	1943;"	d
+TINFL_HUFF_DECODE	miniz.h	1971;"	d
+TINFL_LZ_DICT_SIZE	miniz.h	1036;"	d
+TINFL_MAX_HUFF_SYMBOLS_0	miniz.h	/^  TINFL_MAX_HUFF_SYMBOLS_0 = 288,$/;"	e	enum:__anon14
+TINFL_MAX_HUFF_SYMBOLS_1	miniz.h	/^  TINFL_MAX_HUFF_SYMBOLS_1 = 32,$/;"	e	enum:__anon14
+TINFL_MAX_HUFF_SYMBOLS_2	miniz.h	/^  TINFL_MAX_HUFF_SYMBOLS_2 = 19,$/;"	e	enum:__anon14
+TINFL_MAX_HUFF_TABLES	miniz.h	/^  TINFL_MAX_HUFF_TABLES = 3,$/;"	e	enum:__anon14
+TINFL_MEMCPY	miniz.h	1862;"	d
+TINFL_MEMSET	miniz.h	1863;"	d
+TINFL_NEED_BITS	miniz.h	1909;"	d
+TINFL_SKIP_BITS	miniz.h	1916;"	d
+TINFL_STATUS_ADLER32_MISMATCH	miniz.h	/^  TINFL_STATUS_ADLER32_MISMATCH = -2,$/;"	e	enum:__anon13
+TINFL_STATUS_BAD_PARAM	miniz.h	/^  TINFL_STATUS_BAD_PARAM = -3,$/;"	e	enum:__anon13
+TINFL_STATUS_DONE	miniz.h	/^  TINFL_STATUS_DONE = 0,$/;"	e	enum:__anon13
+TINFL_STATUS_FAILED	miniz.h	/^  TINFL_STATUS_FAILED = -1,$/;"	e	enum:__anon13
+TINFL_STATUS_HAS_MORE_OUTPUT	miniz.h	/^  TINFL_STATUS_HAS_MORE_OUTPUT = 2$/;"	e	enum:__anon13
+TINFL_STATUS_NEEDS_MORE_INPUT	miniz.h	/^  TINFL_STATUS_NEEDS_MORE_INPUT = 1,$/;"	e	enum:__anon13
+TINFL_USE_64BIT_BITBUF	miniz.h	1085;"	d
+ZIP_DEFAULT_COMPRESSION_LEVEL	zip.h	53;"	d
+ZIP_H	zip.h	13;"	d
+ZLIB_VERNUM	miniz.h	671;"	d
+ZLIB_VERSION	miniz.h	670;"	d
+ZLIB_VER_MAJOR	miniz.h	672;"	d
+ZLIB_VER_MINOR	miniz.h	673;"	d
+ZLIB_VER_REVISION	miniz.h	674;"	d
+ZLIB_VER_SUBREVISION	miniz.h	675;"	d
+Z_BEST_COMPRESSION	miniz.h	638;"	d
+Z_BEST_SPEED	miniz.h	637;"	d
+Z_BLOCK	miniz.h	625;"	d
+Z_BUF_ERROR	miniz.h	633;"	d
+Z_DATA_ERROR	miniz.h	631;"	d
+Z_DEFAULT_COMPRESSION	miniz.h	639;"	d
+Z_DEFAULT_STRATEGY	miniz.h	640;"	d
+Z_DEFAULT_WINDOW_BITS	miniz.h	646;"	d
+Z_DEFLATED	miniz.h	645;"	d
+Z_ERRNO	miniz.h	629;"	d
+Z_FILTERED	miniz.h	641;"	d
+Z_FINISH	miniz.h	624;"	d
+Z_FIXED	miniz.h	644;"	d
+Z_FULL_FLUSH	miniz.h	623;"	d
+Z_HUFFMAN_ONLY	miniz.h	642;"	d
+Z_MEM_ERROR	miniz.h	632;"	d
+Z_NEED_DICT	miniz.h	628;"	d
+Z_NO_COMPRESSION	miniz.h	636;"	d
+Z_NO_FLUSH	miniz.h	620;"	d
+Z_NULL	miniz.h	619;"	d
+Z_OK	miniz.h	626;"	d
+Z_PARAM_ERROR	miniz.h	635;"	d
+Z_PARTIAL_FLUSH	miniz.h	621;"	d
+Z_RLE	miniz.h	643;"	d
+Z_STREAM_END	miniz.h	627;"	d
+Z_STREAM_ERROR	miniz.h	630;"	d
+Z_SYNC_FLUSH	miniz.h	622;"	d
+Z_VERSION_ERROR	miniz.h	634;"	d
+_SSIZE_T	zip.h	24;"	d
+__STDC_WANT_LIB_EXT1__	zip.c	10;"	d	file:
+adler	miniz.h	/^  mz_ulong adler;    \/\/ adler32 of the source or uncompressed data$/;"	m	struct:mz_stream_s
+adler32	miniz.h	666;"	d
+alloc_func	miniz.h	647;"	d
+archive	zip.c	/^  mz_zip_archive archive;$/;"	m	struct:zip_t	file:
+avail_in	miniz.h	/^  unsigned int avail_in;        \/\/ number of bytes available at next_in$/;"	m	struct:mz_stream_s
+avail_out	miniz.h	/^  unsigned int avail_out;  \/\/ number of bytes that can be written to next_out$/;"	m	struct:mz_stream_s
+base_name	zip.c	/^static const char *base_name(const char *name) {$/;"	f	file:
+charf	miniz.h	/^typedef char charf;$/;"	t
+comp	zip.c	/^  tdefl_compressor comp;$/;"	m	struct:zip_entry_t	file:
+comp_size	zip.c	/^  mz_uint64 comp_size;$/;"	m	struct:zip_entry_t	file:
+compress	miniz.h	657;"	d
+compress2	miniz.h	658;"	d
+compressBound	miniz.h	659;"	d
+crc32	miniz.h	665;"	d
+data_type	miniz.h	/^  int data_type;     \/\/ data_type (unused)$/;"	m	struct:mz_stream_s
+def_alloc_func	miniz.h	/^static void *def_alloc_func(void *opaque, size_t items, size_t size) {$/;"	f
+def_free_func	miniz.h	/^static void def_free_func(void *opaque, void *address) {$/;"	f
+def_realloc_func	miniz.h	/^static void *def_realloc_func(void *opaque, void *address, size_t items,$/;"	f
+deflate	miniz.h	654;"	d
+deflateBound	miniz.h	656;"	d
+deflateEnd	miniz.h	655;"	d
+deflateInit	miniz.h	651;"	d
+deflateInit2	miniz.h	652;"	d
+deflateReset	miniz.h	653;"	d
+entry	zip.c	/^  struct zip_entry_t entry;$/;"	m	struct:zip_t	typeref:struct:zip_t::zip_entry_t	file:
+external_attr	zip.c	/^  mz_uint32 external_attr;$/;"	m	struct:zip_entry_t	file:
+fopen64	miniz.h	309;"	d
+free_func	miniz.h	648;"	d
+freopen64	miniz.h	310;"	d
+fseeko64	miniz.h	308;"	d
+ftello64	miniz.h	307;"	d
+header	zip.c	/^  mz_uint8 header[MZ_ZIP_LOCAL_DIR_HEADER_SIZE];$/;"	m	struct:zip_entry_t	file:
+header_offset	zip.c	/^  mz_uint64 header_offset;$/;"	m	struct:zip_entry_t	file:
+index	zip.c	/^  int index;$/;"	m	struct:zip_entry_t	file:
+inflate	miniz.h	662;"	d
+inflateEnd	miniz.h	663;"	d
+inflateInit	miniz.h	660;"	d
+inflateInit2	miniz.h	661;"	d
+inflate_state	miniz.h	/^} inflate_state;$/;"	t	typeref:struct:__anon24
+internal_state	miniz.h	649;"	d
+intf	miniz.h	/^typedef int intf;$/;"	t
+level	zip.c	/^  mz_uint level;$/;"	m	struct:zip_t	file:
+m_adler32	miniz.h	/^  mz_uint m_adler32, m_lookahead_pos, m_lookahead_size, m_dict_size;$/;"	m	struct:__anon23
+m_archive_size	miniz.h	/^  mz_uint64 m_archive_size;$/;"	m	struct:__anon10
+m_bit_buf	miniz.h	/^  tinfl_bit_buf_t m_bit_buf;$/;"	m	struct:tinfl_decompressor_tag
+m_bit_buffer	miniz.h	/^      m_bit_buffer;$/;"	m	struct:__anon23
+m_bit_flag	miniz.h	/^  mz_uint16 m_bit_flag;$/;"	m	struct:__anon7
+m_bits_in	miniz.h	/^  mz_uint m_num_flags_left, m_total_lz_bytes, m_lz_code_buf_dict_pos, m_bits_in,$/;"	m	struct:__anon23
+m_block_index	miniz.h	/^      m_output_flush_ofs, m_output_flush_remaining, m_finished, m_block_index,$/;"	m	struct:__anon23
+m_capacity	miniz.h	/^  size_t m_size, m_capacity;$/;"	m	struct:__anon27
+m_capacity	miniz.h	/^  size_t m_size, m_capacity;$/;"	m	struct:__anon29
+m_central_dir	miniz.h	/^  mz_zip_array m_central_dir;$/;"	m	struct:mz_zip_internal_state_tag
+m_central_dir_offsets	miniz.h	/^  mz_zip_array m_central_dir_offsets;$/;"	m	struct:mz_zip_internal_state_tag
+m_central_dir_ofs	miniz.h	/^  mz_uint32 m_central_dir_ofs;$/;"	m	struct:__anon7
+m_central_directory_file_ofs	miniz.h	/^  mz_uint64 m_central_directory_file_ofs;$/;"	m	struct:__anon10
+m_check_adler32	miniz.h	/^      m_check_adler32, m_dist, m_counter, m_num_extra,$/;"	m	struct:tinfl_decompressor_tag
+m_code_size	miniz.h	/^  mz_uint8 m_code_size[TINFL_MAX_HUFF_SYMBOLS_0];$/;"	m	struct:__anon15
+m_comment	miniz.h	/^  char m_comment[MZ_ZIP_MAX_ARCHIVE_FILE_COMMENT_SIZE];$/;"	m	struct:__anon7
+m_comment_size	miniz.h	/^  mz_uint32 m_comment_size;$/;"	m	struct:__anon7
+m_comp_size	miniz.h	/^  mz_uint64 m_comp_size;$/;"	m	struct:__anon30
+m_comp_size	miniz.h	/^  mz_uint64 m_comp_size;$/;"	m	struct:__anon7
+m_counter	miniz.h	/^      m_check_adler32, m_dist, m_counter, m_num_extra,$/;"	m	struct:tinfl_decompressor_tag
+m_crc32	miniz.h	/^  mz_uint32 m_crc32;$/;"	m	struct:__anon7
+m_cur_archive_file_ofs	miniz.h	/^  mz_uint64 m_cur_archive_file_ofs;$/;"	m	struct:__anon30
+m_decomp	miniz.h	/^  tinfl_decompressor m_decomp;$/;"	m	struct:__anon24
+m_dict	miniz.h	/^  mz_uint8 m_dict[TDEFL_LZ_DICT_SIZE + TDEFL_MAX_MATCH_LEN - 1];$/;"	m	struct:__anon23
+m_dict	miniz.h	/^  mz_uint8 m_dict[TINFL_LZ_DICT_SIZE];$/;"	m	struct:__anon24
+m_dict_avail	miniz.h	/^  mz_uint m_dict_ofs, m_dict_avail, m_first_call, m_has_flushed;$/;"	m	struct:__anon24
+m_dict_ofs	miniz.h	/^  mz_uint m_dict_ofs, m_dict_avail, m_first_call, m_has_flushed;$/;"	m	struct:__anon24
+m_dict_size	miniz.h	/^  mz_uint m_adler32, m_lookahead_pos, m_lookahead_size, m_dict_size;$/;"	m	struct:__anon23
+m_dist	miniz.h	/^      m_check_adler32, m_dist, m_counter, m_num_extra,$/;"	m	struct:tinfl_decompressor_tag
+m_dist_from_out_buf_start	miniz.h	/^  size_t m_dist_from_out_buf_start;$/;"	m	struct:tinfl_decompressor_tag
+m_element_size	miniz.h	/^  mz_uint m_element_size;$/;"	m	struct:__anon29
+m_expandable	miniz.h	/^  mz_bool m_expandable;$/;"	m	struct:__anon27
+m_external_attr	miniz.h	/^  mz_uint32 m_external_attr;$/;"	m	struct:__anon7
+m_file_archive_start_ofs	miniz.h	/^  mz_uint64 m_file_archive_start_ofs;$/;"	m	struct:mz_zip_internal_state_tag
+m_file_index	miniz.h	/^  mz_uint32 m_file_index;$/;"	m	struct:__anon7
+m_file_offset_alignment	miniz.h	/^  mz_uint64 m_file_offset_alignment;$/;"	m	struct:__anon10
+m_filename	miniz.h	/^  char m_filename[MZ_ZIP_MAX_ARCHIVE_FILENAME_SIZE];$/;"	m	struct:__anon7
+m_final	miniz.h	/^  mz_uint32 m_state, m_num_bits, m_zhdr0, m_zhdr1, m_z_adler32, m_final, m_type,$/;"	m	struct:tinfl_decompressor_tag
+m_finished	miniz.h	/^      m_output_flush_ofs, m_output_flush_remaining, m_finished, m_block_index,$/;"	m	struct:__anon23
+m_first_call	miniz.h	/^  mz_uint m_dict_ofs, m_dict_avail, m_first_call, m_has_flushed;$/;"	m	struct:__anon24
+m_flags	miniz.h	/^  mz_uint m_flags, m_max_probes[2];$/;"	m	struct:__anon23
+m_flush	miniz.h	/^  tdefl_flush m_flush;$/;"	m	struct:__anon23
+m_greedy_parsing	miniz.h	/^  int m_greedy_parsing;$/;"	m	struct:__anon23
+m_has_flushed	miniz.h	/^  mz_uint m_dict_ofs, m_dict_avail, m_first_call, m_has_flushed;$/;"	m	struct:__anon24
+m_hash	miniz.h	/^  mz_uint16 m_hash[TDEFL_LZ_HASH_SIZE];$/;"	m	struct:__anon23
+m_huff_code_sizes	miniz.h	/^  mz_uint8 m_huff_code_sizes[TDEFL_MAX_HUFF_TABLES][TDEFL_MAX_HUFF_SYMBOLS];$/;"	m	struct:__anon23
+m_huff_codes	miniz.h	/^  mz_uint16 m_huff_codes[TDEFL_MAX_HUFF_TABLES][TDEFL_MAX_HUFF_SYMBOLS];$/;"	m	struct:__anon23
+m_huff_count	miniz.h	/^  mz_uint16 m_huff_count[TDEFL_MAX_HUFF_TABLES][TDEFL_MAX_HUFF_SYMBOLS];$/;"	m	struct:__anon23
+m_init_flags	miniz.h	/^  uint32_t m_init_flags;$/;"	m	struct:mz_zip_internal_state_tag
+m_internal_attr	miniz.h	/^  mz_uint16 m_internal_attr;$/;"	m	struct:__anon7
+m_key	miniz.h	/^  mz_uint16 m_key, m_sym_index;$/;"	m	struct:__anon25
+m_last_error	miniz.h	/^  mz_zip_error m_last_error;$/;"	m	struct:__anon10
+m_last_status	miniz.h	/^  tinfl_status m_last_status;$/;"	m	struct:__anon24
+m_len_codes	miniz.h	/^      m_len_codes[TINFL_MAX_HUFF_SYMBOLS_0 + TINFL_MAX_HUFF_SYMBOLS_1 + 137];$/;"	m	struct:tinfl_decompressor_tag
+m_local_header_ofs	miniz.h	/^  mz_uint64 m_local_header_ofs;$/;"	m	struct:__anon7
+m_look_up	miniz.h	/^  mz_int16 m_look_up[TINFL_FAST_LOOKUP_SIZE],$/;"	m	struct:__anon15
+m_lookahead_pos	miniz.h	/^  mz_uint m_adler32, m_lookahead_pos, m_lookahead_size, m_dict_size;$/;"	m	struct:__anon23
+m_lookahead_size	miniz.h	/^  mz_uint m_adler32, m_lookahead_pos, m_lookahead_size, m_dict_size;$/;"	m	struct:__anon23
+m_lz_code_buf	miniz.h	/^  mz_uint8 m_lz_code_buf[TDEFL_LZ_CODE_BUF_SIZE];$/;"	m	struct:__anon23
+m_lz_code_buf_dict_pos	miniz.h	/^  mz_uint m_num_flags_left, m_total_lz_bytes, m_lz_code_buf_dict_pos, m_bits_in,$/;"	m	struct:__anon23
+m_max_probes	miniz.h	/^  mz_uint m_flags, m_max_probes[2];$/;"	m	struct:__anon23
+m_mem_capacity	miniz.h	/^  size_t m_mem_capacity;$/;"	m	struct:mz_zip_internal_state_tag
+m_mem_size	miniz.h	/^  size_t m_mem_size;$/;"	m	struct:mz_zip_internal_state_tag
+m_method	miniz.h	/^  mz_uint16 m_method;$/;"	m	struct:__anon7
+m_next	miniz.h	/^  mz_uint16 m_next[TDEFL_LZ_DICT_SIZE];$/;"	m	struct:__anon23
+m_num_bits	miniz.h	/^  mz_uint32 m_state, m_num_bits, m_zhdr0, m_zhdr1, m_z_adler32, m_final, m_type,$/;"	m	struct:tinfl_decompressor_tag
+m_num_extra	miniz.h	/^      m_check_adler32, m_dist, m_counter, m_num_extra,$/;"	m	struct:tinfl_decompressor_tag
+m_num_flags_left	miniz.h	/^  mz_uint m_num_flags_left, m_total_lz_bytes, m_lz_code_buf_dict_pos, m_bits_in,$/;"	m	struct:__anon23
+m_out_buf_ofs	miniz.h	/^  size_t m_src_buf_left, m_out_buf_ofs;$/;"	m	struct:__anon23
+m_output_buf	miniz.h	/^  mz_uint8 m_output_buf[TDEFL_OUT_BUF_SIZE];$/;"	m	struct:__anon23
+m_output_flush_ofs	miniz.h	/^      m_output_flush_ofs, m_output_flush_remaining, m_finished, m_block_index,$/;"	m	struct:__anon23
+m_output_flush_remaining	miniz.h	/^      m_output_flush_ofs, m_output_flush_remaining, m_finished, m_block_index,$/;"	m	struct:__anon23
+m_p	miniz.h	/^  void *m_p;$/;"	m	struct:__anon29
+m_pAlloc	miniz.h	/^  mz_alloc_func m_pAlloc;$/;"	m	struct:__anon10
+m_pAlloc_opaque	miniz.h	/^  void *m_pAlloc_opaque;$/;"	m	struct:__anon10
+m_pBuf	miniz.h	/^  mz_uint8 *m_pBuf;$/;"	m	struct:__anon27
+m_pFile	miniz.h	/^  MZ_FILE *m_pFile;$/;"	m	struct:mz_zip_internal_state_tag
+m_pFree	miniz.h	/^  mz_free_func m_pFree;$/;"	m	struct:__anon10
+m_pIO_opaque	miniz.h	/^  void *m_pIO_opaque;$/;"	m	struct:__anon10
+m_pIn_buf	miniz.h	/^  const void *m_pIn_buf;$/;"	m	struct:__anon23
+m_pIn_buf_size	miniz.h	/^  size_t *m_pIn_buf_size, *m_pOut_buf_size;$/;"	m	struct:__anon23
+m_pLZ_code_buf	miniz.h	/^  mz_uint8 *m_pLZ_code_buf, *m_pLZ_flags, *m_pOutput_buf, *m_pOutput_buf_end;$/;"	m	struct:__anon23
+m_pLZ_flags	miniz.h	/^  mz_uint8 *m_pLZ_code_buf, *m_pLZ_flags, *m_pOutput_buf, *m_pOutput_buf_end;$/;"	m	struct:__anon23
+m_pMem	miniz.h	/^  void *m_pMem;$/;"	m	struct:mz_zip_internal_state_tag
+m_pNeeds_keepalive	miniz.h	/^  mz_file_needs_keepalive m_pNeeds_keepalive;$/;"	m	struct:__anon10
+m_pOut_buf	miniz.h	/^  void *m_pOut_buf;$/;"	m	struct:__anon23
+m_pOut_buf_size	miniz.h	/^  size_t *m_pIn_buf_size, *m_pOut_buf_size;$/;"	m	struct:__anon23
+m_pOutput_buf	miniz.h	/^  mz_uint8 *m_pLZ_code_buf, *m_pLZ_flags, *m_pOutput_buf, *m_pOutput_buf_end;$/;"	m	struct:__anon23
+m_pOutput_buf_end	miniz.h	/^  mz_uint8 *m_pLZ_code_buf, *m_pLZ_flags, *m_pOutput_buf, *m_pOutput_buf_end;$/;"	m	struct:__anon23
+m_pPut_buf_func	miniz.h	/^  tdefl_put_buf_func_ptr m_pPut_buf_func;$/;"	m	struct:__anon23
+m_pPut_buf_user	miniz.h	/^  void *m_pPut_buf_user;$/;"	m	struct:__anon23
+m_pRead	miniz.h	/^  mz_file_read_func m_pRead;$/;"	m	struct:__anon10
+m_pRealloc	miniz.h	/^  mz_realloc_func m_pRealloc;$/;"	m	struct:__anon10
+m_pSrc	miniz.h	/^  const mz_uint8 *m_pSrc;$/;"	m	struct:__anon23
+m_pState	miniz.h	/^  mz_zip_internal_state *m_pState;$/;"	m	struct:__anon10
+m_pWrite	miniz.h	/^  mz_file_write_func m_pWrite;$/;"	m	struct:__anon10
+m_pZip	miniz.h	/^  mz_zip_archive *m_pZip;$/;"	m	struct:__anon30
+m_prev_return_status	miniz.h	/^  tdefl_status m_prev_return_status;$/;"	m	struct:__anon23
+m_raw_header	miniz.h	/^  mz_uint8 m_raw_header[4],$/;"	m	struct:tinfl_decompressor_tag
+m_saved_lit	miniz.h	/^  mz_uint m_saved_match_dist, m_saved_match_len, m_saved_lit,$/;"	m	struct:__anon23
+m_saved_match_dist	miniz.h	/^  mz_uint m_saved_match_dist, m_saved_match_len, m_saved_lit,$/;"	m	struct:__anon23
+m_saved_match_len	miniz.h	/^  mz_uint m_saved_match_dist, m_saved_match_len, m_saved_lit,$/;"	m	struct:__anon23
+m_size	miniz.h	/^  size_t m_size, m_capacity;$/;"	m	struct:__anon27
+m_size	miniz.h	/^  size_t m_size, m_capacity;$/;"	m	struct:__anon29
+m_sorted_central_dir_offsets	miniz.h	/^  mz_zip_array m_sorted_central_dir_offsets;$/;"	m	struct:mz_zip_internal_state_tag
+m_src_buf_left	miniz.h	/^  size_t m_src_buf_left, m_out_buf_ofs;$/;"	m	struct:__anon23
+m_state	miniz.h	/^  mz_uint32 m_state, m_num_bits, m_zhdr0, m_zhdr1, m_z_adler32, m_final, m_type,$/;"	m	struct:tinfl_decompressor_tag
+m_sym_index	miniz.h	/^  mz_uint16 m_key, m_sym_index;$/;"	m	struct:__anon25
+m_table_sizes	miniz.h	/^      m_table_sizes[TINFL_MAX_HUFF_TABLES];$/;"	m	struct:tinfl_decompressor_tag
+m_tables	miniz.h	/^  tinfl_huff_table m_tables[TINFL_MAX_HUFF_TABLES];$/;"	m	struct:tinfl_decompressor_tag
+m_time	miniz.h	/^  time_t m_time;$/;"	m	struct:__anon7
+m_time	zip.c	/^  time_t m_time;$/;"	m	struct:zip_entry_t	file:
+m_total_files	miniz.h	/^  mz_uint32 m_total_files;$/;"	m	struct:__anon10
+m_total_lz_bytes	miniz.h	/^  mz_uint m_num_flags_left, m_total_lz_bytes, m_lz_code_buf_dict_pos, m_bits_in,$/;"	m	struct:__anon23
+m_tree	miniz.h	/^      m_tree[TINFL_MAX_HUFF_SYMBOLS_0 * 2];$/;"	m	struct:__anon15
+m_type	miniz.h	/^  mz_uint32 m_state, m_num_bits, m_zhdr0, m_zhdr1, m_z_adler32, m_final, m_type,$/;"	m	struct:tinfl_decompressor_tag
+m_uncomp_size	miniz.h	/^  mz_uint64 m_uncomp_size;$/;"	m	struct:__anon7
+m_version_made_by	miniz.h	/^  mz_uint16 m_version_made_by;$/;"	m	struct:__anon7
+m_version_needed	miniz.h	/^  mz_uint16 m_version_needed;$/;"	m	struct:__anon7
+m_wants_to_finish	miniz.h	/^      m_wants_to_finish;$/;"	m	struct:__anon23
+m_window_bits	miniz.h	/^  int m_window_bits;$/;"	m	struct:__anon24
+m_z_adler32	miniz.h	/^  mz_uint32 m_state, m_num_bits, m_zhdr0, m_zhdr1, m_z_adler32, m_final, m_type,$/;"	m	struct:tinfl_decompressor_tag
+m_zhdr0	miniz.h	/^  mz_uint32 m_state, m_num_bits, m_zhdr0, m_zhdr1, m_z_adler32, m_final, m_type,$/;"	m	struct:tinfl_decompressor_tag
+m_zhdr1	miniz.h	/^  mz_uint32 m_state, m_num_bits, m_zhdr0, m_zhdr1, m_z_adler32, m_final, m_type,$/;"	m	struct:tinfl_decompressor_tag
+m_zip64	miniz.h	/^  mz_bool m_zip64;$/;"	m	struct:mz_zip_internal_state_tag
+m_zip64_has_extended_info_fields	miniz.h	/^  mz_bool m_zip64_has_extended_info_fields;$/;"	m	struct:mz_zip_internal_state_tag
+m_zip_mode	miniz.h	/^  mz_zip_mode m_zip_mode;$/;"	m	struct:__anon10
+m_zip_type	miniz.h	/^  mz_zip_type m_zip_type;$/;"	m	struct:__anon10
+main	main.c	/^int main(int argc, char **argv)$/;"	f
+method	zip.c	/^  mz_uint16 method;$/;"	m	struct:zip_entry_t	file:
+mkpath	zip.c	/^static int mkpath(char *path) {$/;"	f	file:
+msg	miniz.h	/^  char *msg;                       \/\/ error msg (unused)$/;"	m	struct:mz_stream_s
+mz_adler32	miniz.h	/^mz_ulong mz_adler32(mz_ulong adler, const unsigned char *ptr, size_t buf_len) {$/;"	f
+mz_alloc_func	miniz.h	/^typedef void *(*mz_alloc_func)(void *opaque, size_t items, size_t size);$/;"	t
+mz_bitmasks	miniz.h	/^static const mz_uint mz_bitmasks[17] = {$/;"	v
+mz_bool	miniz.h	/^typedef int mz_bool;$/;"	t
+mz_compress	miniz.h	/^int mz_compress(unsigned char *pDest, mz_ulong *pDest_len,$/;"	f
+mz_compress2	miniz.h	/^int mz_compress2(unsigned char *pDest, mz_ulong *pDest_len,$/;"	f
+mz_compressBound	miniz.h	/^mz_ulong mz_compressBound(mz_ulong source_len) {$/;"	f
+mz_crc32	miniz.h	/^mz_ulong mz_crc32(mz_ulong crc, const mz_uint8 *ptr, size_t buf_len) {$/;"	f
+mz_deflate	miniz.h	/^int mz_deflate(mz_streamp pStream, int flush) {$/;"	f
+mz_deflateBound	miniz.h	/^mz_ulong mz_deflateBound(mz_streamp pStream, mz_ulong source_len) {$/;"	f
+mz_deflateEnd	miniz.h	/^int mz_deflateEnd(mz_streamp pStream) {$/;"	f
+mz_deflateInit	miniz.h	/^int mz_deflateInit(mz_streamp pStream, int level) {$/;"	f
+mz_deflateInit2	miniz.h	/^int mz_deflateInit2(mz_streamp pStream, int level, int method, int window_bits,$/;"	f
+mz_deflateReset	miniz.h	/^int mz_deflateReset(mz_streamp pStream) {$/;"	f
+mz_error	miniz.h	/^const char *mz_error(int err) {$/;"	f
+mz_file_needs_keepalive	miniz.h	/^typedef mz_bool (*mz_file_needs_keepalive)(void *pOpaque);$/;"	t
+mz_file_read_func	miniz.h	/^typedef size_t (*mz_file_read_func)(void *pOpaque, mz_uint64 file_ofs,$/;"	t
+mz_file_write_func	miniz.h	/^typedef size_t (*mz_file_write_func)(void *pOpaque, mz_uint64 file_ofs,$/;"	t
+mz_fopen	miniz.h	/^static FILE *mz_fopen(const char *pFilename, const char *pMode) {$/;"	f
+mz_free	miniz.h	/^void mz_free(void *p) { MZ_FREE(p); }$/;"	f
+mz_free_func	miniz.h	/^typedef void (*mz_free_func)(void *opaque, void *address);$/;"	t
+mz_freopen	miniz.h	/^static FILE *mz_freopen(const char *pPath, const char *pMode, FILE *pStream) {$/;"	f
+mz_inflate	miniz.h	/^int mz_inflate(mz_streamp pStream, int flush) {$/;"	f
+mz_inflateEnd	miniz.h	/^int mz_inflateEnd(mz_streamp pStream) {$/;"	f
+mz_inflateInit	miniz.h	/^int mz_inflateInit(mz_streamp pStream) {$/;"	f
+mz_inflateInit2	miniz.h	/^int mz_inflateInit2(mz_streamp pStream, int window_bits) {$/;"	f
+mz_int16	miniz.h	/^typedef signed short mz_int16;$/;"	t
+mz_int64	miniz.h	/^typedef long long mz_int64;$/;"	t
+mz_realloc_func	miniz.h	/^typedef void *(*mz_realloc_func)(void *opaque, void *address, size_t items,$/;"	t
+mz_stream	miniz.h	/^} mz_stream;$/;"	t	typeref:struct:mz_stream_s
+mz_stream_s	miniz.h	/^typedef struct mz_stream_s {$/;"	s
+mz_streamp	miniz.h	/^typedef mz_stream *mz_streamp;$/;"	t
+mz_uint	miniz.h	/^typedef unsigned int mz_uint;$/;"	t
+mz_uint16	miniz.h	/^typedef unsigned short mz_uint16;$/;"	t
+mz_uint32	miniz.h	/^typedef unsigned int mz_uint32;$/;"	t
+mz_uint64	miniz.h	/^typedef unsigned long long mz_uint64;$/;"	t
+mz_uint8	miniz.h	/^typedef unsigned char mz_uint8;$/;"	t
+mz_ulong	miniz.h	/^typedef unsigned long mz_ulong;$/;"	t
+mz_uncompress	miniz.h	/^int mz_uncompress(unsigned char *pDest, mz_ulong *pDest_len,$/;"	f
+mz_validate_uint16	miniz.h	/^typedef unsigned char mz_validate_uint16[sizeof(mz_uint16) == 2 ? 1 : -1];$/;"	t
+mz_validate_uint32	miniz.h	/^typedef unsigned char mz_validate_uint32[sizeof(mz_uint32) == 4 ? 1 : -1];$/;"	t
+mz_validate_uint64	miniz.h	/^typedef unsigned char mz_validate_uint64[sizeof(mz_uint64) == 8 ? 1 : -1];$/;"	t
+mz_version	miniz.h	/^const char *mz_version(void) { return MZ_VERSION; }$/;"	f
+mz_write_le16	miniz.h	/^static void mz_write_le16(mz_uint8 *p, mz_uint16 v) {$/;"	f
+mz_write_le32	miniz.h	/^static void mz_write_le32(mz_uint8 *p, mz_uint32 v) {$/;"	f
+mz_zip_add_mem_to_archive_file_in_place	miniz.h	/^mz_bool mz_zip_add_mem_to_archive_file_in_place($/;"	f
+mz_zip_archive	miniz.h	/^} mz_zip_archive;$/;"	t	typeref:struct:__anon10
+mz_zip_archive_file_stat	miniz.h	/^} mz_zip_archive_file_stat;$/;"	t	typeref:struct:__anon7
+mz_zip_array	miniz.h	/^} mz_zip_array;$/;"	t	typeref:struct:__anon29
+mz_zip_array_clear	miniz.h	/^static MZ_FORCEINLINE void mz_zip_array_clear(mz_zip_archive *pZip,$/;"	f
+mz_zip_array_ensure_capacity	miniz.h	/^static mz_bool mz_zip_array_ensure_capacity(mz_zip_archive *pZip,$/;"	f
+mz_zip_array_ensure_room	miniz.h	/^static MZ_FORCEINLINE mz_bool mz_zip_array_ensure_room(mz_zip_archive *pZip,$/;"	f
+mz_zip_array_push_back	miniz.h	/^static MZ_FORCEINLINE mz_bool mz_zip_array_push_back(mz_zip_archive *pZip,$/;"	f
+mz_zip_array_reserve	miniz.h	/^static MZ_FORCEINLINE mz_bool mz_zip_array_reserve(mz_zip_archive *pZip,$/;"	f
+mz_zip_array_resize	miniz.h	/^static MZ_FORCEINLINE mz_bool mz_zip_array_resize(mz_zip_archive *pZip,$/;"	f
+mz_zip_dos_to_time_t	miniz.h	/^static time_t mz_zip_dos_to_time_t(int dos_time, int dos_date) {$/;"	f
+mz_zip_error	miniz.h	/^} mz_zip_error;$/;"	t	typeref:enum:__anon2
+mz_zip_extract_archive_file_to_heap	miniz.h	/^void *mz_zip_extract_archive_file_to_heap(const char *pZip_filename,$/;"	f
+mz_zip_file_read_func	miniz.h	/^static size_t mz_zip_file_read_func(void *pOpaque, mz_uint64 file_ofs,$/;"	f
+mz_zip_file_write_callback	miniz.h	/^static size_t mz_zip_file_write_callback(void *pOpaque, mz_uint64 ofs,$/;"	f
+mz_zip_file_write_func	miniz.h	/^static size_t mz_zip_file_write_func(void *pOpaque, mz_uint64 file_ofs,$/;"	f
+mz_zip_flags	miniz.h	/^} mz_zip_flags;$/;"	t	typeref:enum:__anon11
+mz_zip_get_file_modified_time	miniz.h	/^static mz_bool mz_zip_get_file_modified_time(const char *pFilename,$/;"	f
+mz_zip_heap_write_func	miniz.h	/^static size_t mz_zip_heap_write_func(void *pOpaque, mz_uint64 file_ofs,$/;"	f
+mz_zip_internal_state	miniz.h	/^typedef struct mz_zip_internal_state_tag mz_zip_internal_state;$/;"	t	typeref:struct:mz_zip_internal_state_tag
+mz_zip_internal_state_tag	miniz.h	/^struct mz_zip_internal_state_tag {$/;"	s
+mz_zip_mem_read_func	miniz.h	/^static size_t mz_zip_mem_read_func(void *pOpaque, mz_uint64 file_ofs,$/;"	f
+mz_zip_mode	miniz.h	/^} mz_zip_mode;$/;"	t	typeref:enum:__anon8
+mz_zip_reader_end	miniz.h	/^mz_bool mz_zip_reader_end(mz_zip_archive *pZip) {$/;"	f
+mz_zip_reader_extract_file_to_callback	miniz.h	/^mz_bool mz_zip_reader_extract_file_to_callback(mz_zip_archive *pZip,$/;"	f
+mz_zip_reader_extract_file_to_file	miniz.h	/^mz_bool mz_zip_reader_extract_file_to_file(mz_zip_archive *pZip,$/;"	f
+mz_zip_reader_extract_file_to_heap	miniz.h	/^void *mz_zip_reader_extract_file_to_heap(mz_zip_archive *pZip,$/;"	f
+mz_zip_reader_extract_file_to_mem	miniz.h	/^mz_bool mz_zip_reader_extract_file_to_mem(mz_zip_archive *pZip,$/;"	f
+mz_zip_reader_extract_file_to_mem_no_alloc	miniz.h	/^mz_bool mz_zip_reader_extract_file_to_mem_no_alloc($/;"	f
+mz_zip_reader_extract_to_callback	miniz.h	/^mz_bool mz_zip_reader_extract_to_callback(mz_zip_archive *pZip,$/;"	f
+mz_zip_reader_extract_to_file	miniz.h	/^mz_bool mz_zip_reader_extract_to_file(mz_zip_archive *pZip, mz_uint file_index,$/;"	f
+mz_zip_reader_extract_to_heap	miniz.h	/^void *mz_zip_reader_extract_to_heap(mz_zip_archive *pZip, mz_uint file_index,$/;"	f
+mz_zip_reader_extract_to_mem	miniz.h	/^mz_bool mz_zip_reader_extract_to_mem(mz_zip_archive *pZip, mz_uint file_index,$/;"	f
+mz_zip_reader_extract_to_mem_no_alloc	miniz.h	/^mz_bool mz_zip_reader_extract_to_mem_no_alloc(mz_zip_archive *pZip,$/;"	f
+mz_zip_reader_file_stat	miniz.h	/^mz_bool mz_zip_reader_file_stat(mz_zip_archive *pZip, mz_uint file_index,$/;"	f
+mz_zip_reader_filename_compare	miniz.h	/^mz_zip_reader_filename_compare(const mz_zip_array *pCentral_dir_array,$/;"	f
+mz_zip_reader_filename_less	miniz.h	/^mz_zip_reader_filename_less(const mz_zip_array *pCentral_dir_array,$/;"	f
+mz_zip_reader_get_cdh	miniz.h	/^mz_zip_reader_get_cdh(mz_zip_archive *pZip, mz_uint file_index) {$/;"	f
+mz_zip_reader_get_filename	miniz.h	/^mz_uint mz_zip_reader_get_filename(mz_zip_archive *pZip, mz_uint file_index,$/;"	f
+mz_zip_reader_get_num_files	miniz.h	/^mz_uint mz_zip_reader_get_num_files(mz_zip_archive *pZip) {$/;"	f
+mz_zip_reader_init	miniz.h	/^mz_bool mz_zip_reader_init(mz_zip_archive *pZip, mz_uint64 size,$/;"	f
+mz_zip_reader_init_file	miniz.h	/^mz_bool mz_zip_reader_init_file(mz_zip_archive *pZip, const char *pFilename,$/;"	f
+mz_zip_reader_init_internal	miniz.h	/^static mz_bool mz_zip_reader_init_internal(mz_zip_archive *pZip,$/;"	f
+mz_zip_reader_init_mem	miniz.h	/^mz_bool mz_zip_reader_init_mem(mz_zip_archive *pZip, const void *pMem,$/;"	f
+mz_zip_reader_is_file_a_directory	miniz.h	/^mz_bool mz_zip_reader_is_file_a_directory(mz_zip_archive *pZip,$/;"	f
+mz_zip_reader_is_file_encrypted	miniz.h	/^mz_bool mz_zip_reader_is_file_encrypted(mz_zip_archive *pZip,$/;"	f
+mz_zip_reader_locate_file	miniz.h	/^int mz_zip_reader_locate_file(mz_zip_archive *pZip, const char *pName,$/;"	f
+mz_zip_reader_locate_file_binary_search	miniz.h	/^static int mz_zip_reader_locate_file_binary_search(mz_zip_archive *pZip,$/;"	f
+mz_zip_reader_locate_header_sig	miniz.h	/^static mz_bool mz_zip_reader_locate_header_sig(mz_zip_archive *pZip,$/;"	f
+mz_zip_reader_read_central_dir	miniz.h	/^static mz_bool mz_zip_reader_read_central_dir(mz_zip_archive *pZip,$/;"	f
+mz_zip_reader_sort_central_dir_offsets_by_filename	miniz.h	/^mz_zip_reader_sort_central_dir_offsets_by_filename(mz_zip_archive *pZip) {$/;"	f
+mz_zip_reader_string_equal	miniz.h	/^static MZ_FORCEINLINE mz_bool mz_zip_reader_string_equal(const char *pA,$/;"	f
+mz_zip_set_error	miniz.h	/^static MZ_FORCEINLINE mz_bool mz_zip_set_error(mz_zip_archive *pZip,$/;"	f
+mz_zip_set_file_times	miniz.h	/^static mz_bool mz_zip_set_file_times(const char *pFilename, time_t access_time,$/;"	f
+mz_zip_time_t_to_dos_time	miniz.h	/^static void mz_zip_time_t_to_dos_time(time_t time, mz_uint16 *pDOS_time,$/;"	f
+mz_zip_type	miniz.h	/^} mz_zip_type;$/;"	t	typeref:enum:__anon9
+mz_zip_writer_add_file	miniz.h	/^mz_bool mz_zip_writer_add_file(mz_zip_archive *pZip, const char *pArchive_name,$/;"	f
+mz_zip_writer_add_from_zip_reader	miniz.h	/^mz_bool mz_zip_writer_add_from_zip_reader(mz_zip_archive *pZip,$/;"	f
+mz_zip_writer_add_mem	miniz.h	/^mz_bool mz_zip_writer_add_mem(mz_zip_archive *pZip, const char *pArchive_name,$/;"	f
+mz_zip_writer_add_mem_ex	miniz.h	/^mz_bool mz_zip_writer_add_mem_ex(mz_zip_archive *pZip,$/;"	f
+mz_zip_writer_add_put_buf_callback	miniz.h	/^static mz_bool mz_zip_writer_add_put_buf_callback(const void *pBuf, int len,$/;"	f
+mz_zip_writer_add_state	miniz.h	/^} mz_zip_writer_add_state;$/;"	t	typeref:struct:__anon30
+mz_zip_writer_add_to_central_dir	miniz.h	/^static mz_bool mz_zip_writer_add_to_central_dir($/;"	f
+mz_zip_writer_compute_padding_needed_for_file_alignment	miniz.h	/^mz_zip_writer_compute_padding_needed_for_file_alignment(mz_zip_archive *pZip) {$/;"	f
+mz_zip_writer_create_central_dir_header	miniz.h	/^static mz_bool mz_zip_writer_create_central_dir_header($/;"	f
+mz_zip_writer_create_local_dir_header	miniz.h	/^static mz_bool mz_zip_writer_create_local_dir_header($/;"	f
+mz_zip_writer_end	miniz.h	/^mz_bool mz_zip_writer_end(mz_zip_archive *pZip) {$/;"	f
+mz_zip_writer_finalize_archive	miniz.h	/^mz_bool mz_zip_writer_finalize_archive(mz_zip_archive *pZip) {$/;"	f
+mz_zip_writer_finalize_heap_archive	miniz.h	/^mz_bool mz_zip_writer_finalize_heap_archive(mz_zip_archive *pZip, void **pBuf,$/;"	f
+mz_zip_writer_init	miniz.h	/^mz_bool mz_zip_writer_init(mz_zip_archive *pZip, mz_uint64 existing_size) {$/;"	f
+mz_zip_writer_init_file	miniz.h	/^mz_bool mz_zip_writer_init_file(mz_zip_archive *pZip, const char *pFilename,$/;"	f
+mz_zip_writer_init_from_reader	miniz.h	/^mz_bool mz_zip_writer_init_from_reader(mz_zip_archive *pZip,$/;"	f
+mz_zip_writer_init_heap	miniz.h	/^mz_bool mz_zip_writer_init_heap(mz_zip_archive *pZip,$/;"	f
+mz_zip_writer_validate_archive_name	miniz.h	/^static mz_bool mz_zip_writer_validate_archive_name(const char *pArchive_name) {$/;"	f
+mz_zip_writer_write_zeros	miniz.h	/^static mz_bool mz_zip_writer_write_zeros(mz_zip_archive *pZip,$/;"	f
+name	zip.c	/^  char *name;$/;"	m	struct:zip_entry_t	file:
+next_in	miniz.h	/^  const unsigned char *next_in; \/\/ pointer to next byte to read$/;"	m	struct:mz_stream_s
+next_out	miniz.h	/^  unsigned char *next_out; \/\/ pointer to next byte to write$/;"	m	struct:mz_stream_s
+offset	zip.c	/^  mz_uint64 offset;$/;"	m	struct:zip_entry_t	file:
+on_extract_entry	main.c	/^int on_extract_entry(const char *filename, void *arg) {$/;"	f
+opaque	miniz.h	/^  void *opaque;       \/\/ heap alloc function user pointer$/;"	m	struct:mz_stream_s
+reserved	miniz.h	/^  mz_ulong reserved; \/\/ not used$/;"	m	struct:mz_stream_s
+s_tdefl_large_dist_extra	miniz.h	/^static const mz_uint8 s_tdefl_large_dist_extra[128] = {$/;"	v
+s_tdefl_large_dist_sym	miniz.h	/^static const mz_uint8 s_tdefl_large_dist_sym[128] = {$/;"	v
+s_tdefl_len_extra	miniz.h	/^static const mz_uint8 s_tdefl_len_extra[256] = {$/;"	v
+s_tdefl_len_sym	miniz.h	/^static const mz_uint16 s_tdefl_len_sym[256] = {$/;"	v
+s_tdefl_num_probes	miniz.h	/^static const mz_uint s_tdefl_num_probes[11] = {0,   1,   6,   32,  16,  32,$/;"	v
+s_tdefl_packed_code_size_syms_swizzle	miniz.h	/^static mz_uint8 s_tdefl_packed_code_size_syms_swizzle[] = {$/;"	v
+s_tdefl_small_dist_extra	miniz.h	/^static const mz_uint8 s_tdefl_small_dist_extra[512] = {$/;"	v
+s_tdefl_small_dist_sym	miniz.h	/^static const mz_uint8 s_tdefl_small_dist_sym[512] = {$/;"	v
+ssize_t	zip.h	/^typedef long long ssize_t; \/* byte count or error *\/$/;"	t
+ssize_t	zip.h	/^typedef long ssize_t; \/* byte count or error *\/$/;"	t
+state	miniz.h	/^  struct mz_internal_state *state; \/\/ internal state, allocated by zalloc\/zfree$/;"	m	struct:mz_stream_s	typeref:struct:mz_stream_s::mz_internal_state
+state	zip.c	/^  mz_zip_writer_add_state state;$/;"	m	struct:zip_entry_t	file:
+strrpl	zip.c	/^static char *strrpl(const char *str, size_t n, char oldchar, char newchar) {$/;"	f	file:
+tdefl_calculate_minimum_redundancy	miniz.h	/^static void tdefl_calculate_minimum_redundancy(tdefl_sym_freq *A, int n) {$/;"	f
+tdefl_compress	miniz.h	/^tdefl_status tdefl_compress(tdefl_compressor *d, const void *pIn_buf,$/;"	f
+tdefl_compress_block	miniz.h	/^static mz_bool tdefl_compress_block(tdefl_compressor *d, mz_bool static_block) {$/;"	f
+tdefl_compress_buffer	miniz.h	/^tdefl_status tdefl_compress_buffer(tdefl_compressor *d, const void *pIn_buf,$/;"	f
+tdefl_compress_fast	miniz.h	/^static mz_bool tdefl_compress_fast(tdefl_compressor *d) {$/;"	f
+tdefl_compress_lz_codes	miniz.h	/^static mz_bool tdefl_compress_lz_codes(tdefl_compressor *d) {$/;"	f
+tdefl_compress_mem_to_heap	miniz.h	/^void *tdefl_compress_mem_to_heap(const void *pSrc_buf, size_t src_buf_len,$/;"	f
+tdefl_compress_mem_to_mem	miniz.h	/^size_t tdefl_compress_mem_to_mem(void *pOut_buf, size_t out_buf_len,$/;"	f
+tdefl_compress_mem_to_output	miniz.h	/^mz_bool tdefl_compress_mem_to_output(const void *pBuf, size_t buf_len,$/;"	f
+tdefl_compress_normal	miniz.h	/^static mz_bool tdefl_compress_normal(tdefl_compressor *d) {$/;"	f
+tdefl_compressor	miniz.h	/^} tdefl_compressor;$/;"	t	typeref:struct:__anon23
+tdefl_create_comp_flags_from_zip_params	miniz.h	/^mz_uint tdefl_create_comp_flags_from_zip_params(int level, int window_bits,$/;"	f
+tdefl_find_match	miniz.h	/^tdefl_find_match(tdefl_compressor *d, mz_uint lookahead_pos, mz_uint max_dist,$/;"	f
+tdefl_flush	miniz.h	/^} tdefl_flush;$/;"	t	typeref:enum:__anon22
+tdefl_flush_block	miniz.h	/^static int tdefl_flush_block(tdefl_compressor *d, int flush) {$/;"	f
+tdefl_flush_output_buffer	miniz.h	/^static tdefl_status tdefl_flush_output_buffer(tdefl_compressor *d) {$/;"	f
+tdefl_get_adler32	miniz.h	/^mz_uint32 tdefl_get_adler32(tdefl_compressor *d) { return d->m_adler32; }$/;"	f
+tdefl_get_prev_return_status	miniz.h	/^tdefl_status tdefl_get_prev_return_status(tdefl_compressor *d) {$/;"	f
+tdefl_huffman_enforce_max_code_size	miniz.h	/^static void tdefl_huffman_enforce_max_code_size(int *pNum_codes,$/;"	f
+tdefl_init	miniz.h	/^tdefl_status tdefl_init(tdefl_compressor *d,$/;"	f
+tdefl_optimize_huffman_table	miniz.h	/^static void tdefl_optimize_huffman_table(tdefl_compressor *d, int table_num,$/;"	f
+tdefl_output_buffer	miniz.h	/^} tdefl_output_buffer;$/;"	t	typeref:struct:__anon27
+tdefl_output_buffer_putter	miniz.h	/^static mz_bool tdefl_output_buffer_putter(const void *pBuf, int len,$/;"	f
+tdefl_put_buf_func_ptr	miniz.h	/^typedef mz_bool (*tdefl_put_buf_func_ptr)(const void *pBuf, int len,$/;"	t
+tdefl_radix_sort_syms	miniz.h	/^static tdefl_sym_freq *tdefl_radix_sort_syms(mz_uint num_syms,$/;"	f
+tdefl_record_literal	miniz.h	/^static MZ_FORCEINLINE void tdefl_record_literal(tdefl_compressor *d,$/;"	f
+tdefl_record_match	miniz.h	/^tdefl_record_match(tdefl_compressor *d, mz_uint match_len, mz_uint match_dist) {$/;"	f
+tdefl_start_dynamic_block	miniz.h	/^static void tdefl_start_dynamic_block(tdefl_compressor *d) {$/;"	f
+tdefl_start_static_block	miniz.h	/^static void tdefl_start_static_block(tdefl_compressor *d) {$/;"	f
+tdefl_status	miniz.h	/^} tdefl_status;$/;"	t	typeref:enum:__anon21
+tdefl_sym_freq	miniz.h	/^} tdefl_sym_freq;$/;"	t	typeref:struct:__anon25
+tdefl_write_image_to_png_file_in_memory	miniz.h	/^void *tdefl_write_image_to_png_file_in_memory(const void *pImage, int w, int h,$/;"	f
+tdefl_write_image_to_png_file_in_memory_ex	miniz.h	/^void *tdefl_write_image_to_png_file_in_memory_ex(const void *pImage, int w,$/;"	f
+tinfl_bit_buf_t	miniz.h	/^typedef mz_uint32 tinfl_bit_buf_t;$/;"	t
+tinfl_bit_buf_t	miniz.h	/^typedef mz_uint64 tinfl_bit_buf_t;$/;"	t
+tinfl_decompress	miniz.h	/^tinfl_status tinfl_decompress(tinfl_decompressor *r,$/;"	f
+tinfl_decompress_mem_to_callback	miniz.h	/^int tinfl_decompress_mem_to_callback(const void *pIn_buf, size_t *pIn_buf_size,$/;"	f
+tinfl_decompress_mem_to_heap	miniz.h	/^void *tinfl_decompress_mem_to_heap(const void *pSrc_buf, size_t src_buf_len,$/;"	f
+tinfl_decompress_mem_to_mem	miniz.h	/^size_t tinfl_decompress_mem_to_mem(void *pOut_buf, size_t out_buf_len,$/;"	f
+tinfl_decompressor	miniz.h	/^typedef struct tinfl_decompressor_tag tinfl_decompressor;$/;"	t	typeref:struct:tinfl_decompressor_tag
+tinfl_decompressor_tag	miniz.h	/^struct tinfl_decompressor_tag {$/;"	s
+tinfl_get_adler32	miniz.h	1054;"	d
+tinfl_huff_table	miniz.h	/^} tinfl_huff_table;$/;"	t	typeref:struct:__anon15
+tinfl_init	miniz.h	1049;"	d
+tinfl_put_buf_func_ptr	miniz.h	/^typedef int (*tinfl_put_buf_func_ptr)(const void *pBuf, int len, void *pUser);$/;"	t
+tinfl_status	miniz.h	/^} tinfl_status;$/;"	t	typeref:enum:__anon13
+total_in	miniz.h	/^  mz_ulong total_in;            \/\/ total number of bytes consumed so far$/;"	m	struct:mz_stream_s
+total_out	miniz.h	/^  mz_ulong total_out;      \/\/ total number of bytes produced so far$/;"	m	struct:mz_stream_s
+uInt	miniz.h	/^typedef unsigned int uInt;$/;"	t
+uIntf	miniz.h	/^typedef uInt uIntf;$/;"	t
+uLong	miniz.h	/^typedef mz_ulong uLong;$/;"	t
+uLongf	miniz.h	/^typedef uLong uLongf;$/;"	t
+uncomp_crc32	zip.c	/^  mz_uint32 uncomp_crc32;$/;"	m	struct:zip_entry_t	file:
+uncomp_size	zip.c	/^  mz_uint64 uncomp_size;$/;"	m	struct:zip_entry_t	file:
+uncompress	miniz.h	664;"	d
+voidp	miniz.h	/^typedef void *voidp;$/;"	t
+voidpc	miniz.h	/^typedef void *const voidpc;$/;"	t
+voidpf	miniz.h	/^typedef void *voidpf;$/;"	t
+zError	miniz.h	669;"	d
+z_stream	miniz.h	650;"	d
+zalloc	miniz.h	/^      zalloc;         \/\/ optional heap allocation function (defaults to malloc)$/;"	m	struct:mz_stream_s
+zfree	miniz.h	/^  mz_free_func zfree; \/\/ optional heap free function (defaults to free)$/;"	m	struct:mz_stream_s
+zip_close	zip.c	/^void zip_close(struct zip_t *zip) {$/;"	f
+zip_create	zip.c	/^int zip_create(const char *zipname, const char *filenames[], size_t len) {$/;"	f
+zip_entry_close	zip.c	/^int zip_entry_close(struct zip_t *zip) {$/;"	f
+zip_entry_crc32	zip.c	/^unsigned int zip_entry_crc32(struct zip_t *zip) {$/;"	f
+zip_entry_extract	zip.c	/^int zip_entry_extract(struct zip_t *zip,$/;"	f
+zip_entry_fread	zip.c	/^int zip_entry_fread(struct zip_t *zip, const char *filename) {$/;"	f
+zip_entry_fwrite	zip.c	/^int zip_entry_fwrite(struct zip_t *zip, const char *filename) {$/;"	f
+zip_entry_index	zip.c	/^int zip_entry_index(struct zip_t *zip) {$/;"	f
+zip_entry_isdir	zip.c	/^int zip_entry_isdir(struct zip_t *zip) {$/;"	f
+zip_entry_name	zip.c	/^const char *zip_entry_name(struct zip_t *zip) {$/;"	f
+zip_entry_noallocread	zip.c	/^ssize_t zip_entry_noallocread(struct zip_t *zip, void *buf, size_t bufsize) {$/;"	f
+zip_entry_open	zip.c	/^int zip_entry_open(struct zip_t *zip, const char *entryname) {$/;"	f
+zip_entry_openbyindex	zip.c	/^int zip_entry_openbyindex(struct zip_t *zip, int index) {$/;"	f
+zip_entry_read	zip.c	/^ssize_t zip_entry_read(struct zip_t *zip, void **buf, size_t *bufsize) {$/;"	f
+zip_entry_size	zip.c	/^unsigned long long zip_entry_size(struct zip_t *zip) {$/;"	f
+zip_entry_t	zip.c	/^struct zip_entry_t {$/;"	s	file:
+zip_entry_write	zip.c	/^int zip_entry_write(struct zip_t *zip, const void *buf, size_t bufsize) {$/;"	f
+zip_extract	zip.c	/^int zip_extract(const char *zipname, const char *dir,$/;"	f
+zip_open	zip.c	/^struct zip_t *zip_open(const char *zipname, int level, char mode) {$/;"	f
+zip_t	zip.c	/^struct zip_t {$/;"	s	file:
+zip_total_entries	zip.c	/^int zip_total_entries(struct zip_t *zip) {$/;"	f
+zlibVersion	miniz.h	676;"	d
+zlib_version	miniz.h	677;"	d
