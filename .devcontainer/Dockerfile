@@ -16,7 +16,7 @@ RUN chown -R ndless:ndless /home/ndless/Ndless &&\
 RUN cd /home/ndless/Ndless/ndless-sdk/toolchain &&\
     su ndless -c "./build_toolchain.sh && rm -rf download build-binutils build binutils-* gcc-* gdb-* newlib-* "
 # DO NOT CHANGE ANYTHING ABOVE THIS LINE UNLESS YOU WANT TO WAIT FOR A VERY LONG TIME
-RUN bash -c "echo -e 'PATH=\"\$PATH:/home/ndless/Ndless/ndless-sdk/bin:/home/ndless/angband-nspire/src/nspire/pdcurses:/home/ndless/PDCurses-nspire/nspire\"\nCC=nspire-gcc' | cat - /home/ndless/.bashrc" > /tmp/out; mv /tmp/out /home/ndless/.bashrc; 
+RUN bash -c "echo -e 'PATH=\"\$PATH:/home/ndless/Ndless/ndless-sdk/bin:/home/ndless/PDCurses-nspire/nspire\"\nCC=nspire-gcc' | cat - /home/ndless/.bashrc" > /tmp/out; mv /tmp/out /home/ndless/.bashrc; 
 RUN chown -R ndless:ndless /home/ndless/.bashrc
 ENV BASH_ENV "/home/ndless/.bashrc"
 
