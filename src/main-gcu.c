@@ -74,10 +74,15 @@
  * Hack -- Windows needs Sleep(), and I really don't want to pull in all
  *         the Win32 headers for this one function
  */
-#if defined(WIN32_CONSOLE_MODE || __NSPIRE__)
+#if defined(WIN32_CONSOLE_MODE)
 # undef USE_TPOSIX
 _stdcall void Sleep(int);
 #define usleep(v) Sleep(v / 1000)
+#endif
+
+/* Don't use termios if we are targetting the TI Nspire */
+#ifdef _TINSPIRE
+#undef USE_TPOSIX
 #endif
 
 /**

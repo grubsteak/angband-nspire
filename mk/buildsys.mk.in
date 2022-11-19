@@ -382,6 +382,8 @@ locales: ${MO_FILES}
 	${COMPILE_STATUS}
 	in="$<"; \
 	out="$@"; \
+	echo .C.O: \
+	echo ${CC} ${CFLAGS} ${CPPFLAGS} ${CFLAGS_$<} ${CFLAGS_$@} ${DEP_CFLAGS} -c -o $@ $<; \
 	if ${CC} ${CFLAGS} ${CPPFLAGS} ${CFLAGS_$<} ${CFLAGS_$@} ${DEP_CFLAGS} -c -o $@ $<; then \
 		${COMPILE_OK}; \
 	else \

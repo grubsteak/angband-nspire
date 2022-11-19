@@ -7,15 +7,15 @@ default: all
 .PHONY: all clean default send
 
 #FIXME: zip uses relative path ../lib instead of lib/
-
-angband.zip: ../../../lib/* ../../angband.tns ../pdcfont.bmp.tns
+LIBFILES = $(addprefix ../../../lib/, gamedata customize help screens user)
+angband.zip: ../../angband.tns ../pdcfont.bmp.tns
 	$(eval ZIPDIR=$(PWD))
-	mkdir -p /tmp/angband_zip
-	echo LIBFILES=$(LIBFILES)
-	echo $^
-	cp -r $^ /tmp/angband_zip
-	cd /tmp/angband_zip && zip -r $(ZIPDIR)/angband.zip ./*
-	rm -r /tmp/angband_zip
+	$(eval TMPDIR=$(shell mktemp -d))
+	mkdir -p $(TMPDIR)/lib
+	cp -r $(LIBFILES) $(TMPDIR)/lib
+	cp -r $^ $(TMPDIR)
+	cd $(TMPDIR) && zip -r $(ZIPDIR)/angband.zip ./*
+	rm -r $(TMPDIR)
 
 angband.zip.tns: angband.zip
 	cp $< $@

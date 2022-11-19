@@ -22,6 +22,7 @@ ENV BASH_ENV "/home/ndless/.bashrc"
 
 RUN bash -c "echo \\#define PATH_MAX 256 >> /usr/lib/gcc/arm-none-eabi/*/*/limits.h;"
 
+RUN echo "#define st_mtime st_mtim.tv_sec" >> /home/ndless/Ndless/ndless-sdk/toolchain/install/arm-none-eabi/sys-include/sys/stat.h
 RUN su ndless -c "cd ~/Ndless/; find . -name '*' -exec sed -i -e 's/string_free/_string_free/g'  -e 's/has_colors/_has_colors/g' {} \\;  2>/dev/null; make -j8"
 RUN su ndless -c "cd ~; git clone https://github.com/grubsteak/PDCurses-nspire.git; cd PDCurses-nspire/nspire; make -j8"
 
@@ -32,4 +33,3 @@ RUN su ndless -c "cd ~; git clone https://github.com/grubsteak/PDCurses-nspire.g
 
 # start compiling angband here
 # RUN echo CACHEBUST
-RUN echo "#define st_mtime st_mtim.tv_sec" >> /home/ndless/Ndless/ndless-sdk/toolchain/install/arm-none-eabi/sys-include/sys/stat.h

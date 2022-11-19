@@ -49,7 +49,7 @@ char* add_tns(const char *filename)
 int main(int argc, char **argv)
 {
 	printf("Extracting angband...\n");
-	struct zip_t *zip = zip_open("angband.zip.tns", 0, 'r');
+	struct zip_t *zip = zip_open(argv[0], 0, 'r');
 	int i, n = zip_total_entries(zip);
 	for (i = 0; i < n; ++i) {
 	    zip_entry_openbyindex(zip, i);
