@@ -1017,14 +1017,21 @@ void do_cmd_steal(struct command *cmd)
  */
 void move_player(int dir, bool disarm)
 {
+	PROFILE("move_player()",
 	struct loc grid = loc_sum(player->grid, ddgrid[dir]);
 
-	int m_idx = square(cave, grid)->mon;
-	struct monster *mon = cave_monster(cave, m_idx);
-	bool trapsafe = player_is_trapsafe(player);
-	bool trap = square_isdisarmabletrap(cave, grid);
-	bool door = square_iscloseddoor(cave, grid);
-
+	int m_idx;
+	struct monster *mon;
+	bool trapsafe;
+	bool trap;
+	bool door;
+	PROFILE("move_player - search map",
+	m_idx = square(cave, grid)->mon;
+	mon=cave_monster(cave, m_idx);
+	trapsafe = player_is_trapsafe(player);
+	trap = square_isdisarmabletrap(cave, grid);
+	door = square_iscloseddoor(cave, grid);
+	)
 	/* Many things can happen on movement */
 	if (m_idx > 0) {
 		/* Attack monsters */
@@ -1074,9 +1081,13 @@ void move_player(int dir, bool disarm)
 		}
 	} else {
 		/* See if trap detection status will change */
-		bool old_dtrap = square_isdtrap(cave, player->grid);
-		bool new_dtrap = square_isdtrap(cave, grid);
+		bool old_dtrap;
+		bool new_dtrap;
 		bool step = true;
+		PROFILE("square_isdtrap",
+		old_dtrap = square_isdtrap(cave, player->grid);
+		new_dtrap = square_isdtrap(cave, grid);
+		)
 
 		/* Note the change in the detect status */
 		if (old_dtrap != new_dtrap)
@@ -1087,7 +1098,7 @@ void move_player(int dir, bool disarm)
 				&& !player->upkeep->running_firststep
 				&& old_dtrap && !new_dtrap) {
 			disturb(player);
-			return;
+			PROFILE_RETURN(1); ///////////////////////////////////////////////////////////////
 		}
 
 		if (square_isdamaging(cave, grid)) {
@@ -1114,20 +1125,21 @@ void move_player(int dir, bool disarm)
 
 		if (step) {
 			/* Move player */
-			monster_swap(player->grid, grid);
-			player_handle_post_move(player, true, false);
-			cmdq_push(CMD_AUTOPICKUP);
+			PROFILE("monster_swap(player->grid, grid);",monster_swap(player->grid, grid);)
+			PROFILE("player_handle_post_move(player, true, false);",player_handle_post_move(player, true, false);)
+			PROFILE("cmdq_push(CMD_AUTOPICKUP);",cmdq_push(CMD_AUTOPICKUP);)
 			/*
 			 * The autopickup is a side effect of the move:
 			 * whatever command triggered the move will be the
 			 * target for CMD_REPEAT rather than repeating the
 			 * autopickup.
 			 */
-			cmdq_peek()->is_background_command = true;
+			PROFILE("cmdq_peek()->is_background_command = true;",cmdq_peek()->is_background_command = true;)
 		}
 	}
 
 	player->upkeep->running_firststep = false;
+	);
 }
 
 /**

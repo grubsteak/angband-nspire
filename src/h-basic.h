@@ -12,6 +12,7 @@
 #ifndef INCLUDED_H_BASIC_H
 #define INCLUDED_H_BASIC_H
 
+#include "z-profiler.h"
 /**
  * Include autoconf autodetections, otherwise try to autodetect ourselves
  */

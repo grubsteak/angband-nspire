@@ -31,7 +31,7 @@ $(TARGET).elf:  main.c zip.c zip.h miniz.h
 
 $(TARGET).tns: $(TARGET).elf angband.zip
 	genzehn --input $< --output $@
-	echo -n FUPA >> $@ # magic number (F.U.P.A)
+	echo -n FUPA >> $@ # magic string to mark end of executable, kind of hacky
 	cat angband.zip >> $@
 
 all: $(TARGET).tns angband.zip

@@ -54,7 +54,8 @@ ZFILES = \
 	z-textblock.o \
 	z-type.o \
 	z-util.o \
-	z-virt.o
+	z-virt.o \
+	z-profiler.o
 
 # MAINFILES is defined by autotools (or manually) to be combinations of these
 
@@ -216,6 +217,7 @@ ANGFILES = \
 	wiz-debug.o \
 	wiz-spoil.o \
 	wiz-stats.o \
+
 
 STATSMAINFILES = main-stats.o \
         stats/db.o

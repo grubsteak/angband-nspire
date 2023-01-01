@@ -2712,7 +2712,7 @@ void redraw_stuff(struct player *p)
  */
 void handle_stuff(struct player *p)
 {
-	if (p->upkeep->update) update_stuff(p);
-	if (p->upkeep->redraw) redraw_stuff(p);
+	if (p->upkeep->update) PROFILE("update_stuff(p);",update_stuff(p);)
+	if (p->upkeep->redraw) PROFILE("redraw_stuff(p);",redraw_stuff(p);)
 }
 

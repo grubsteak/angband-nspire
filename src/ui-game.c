@@ -508,7 +508,8 @@ void textui_process_command(void)
 {
 	int count = 0;
 	bool done = true;
-	ui_event e = textui_get_command(&count);
+	ui_event e;
+	PROFILE("e = textui_get_command(&count);", e = textui_get_command(&count);)
 	struct cmd_info *cmd = NULL;
 	unsigned char key = '\0';
 	int mode = OPT(player, rogue_like_commands) ? KEYMAP_MODE_ROGUE : KEYMAP_MODE_ORIG;
@@ -517,7 +518,7 @@ void textui_process_command(void)
 		case EVT_RESIZE: do_cmd_redraw(); return;
 		case EVT_MOUSE: textui_process_click(e); return;
 		case EVT_BUTTON:
-		case EVT_KBRD: done = textui_process_key(e.key, &key, count); break;
+		case EVT_KBRD: PROFILE("textui_process_key", done = textui_process_key(e.key, &key, count);) break;
 		default: ;
 	}
 
@@ -572,10 +573,10 @@ void textui_process_command(void)
 		/* Split on type of command */
 		if (cmd && cmd->hook)
 			/* UI command */
-			cmd->hook();
+			PROFILE("UI command / cmd->hook", cmd->hook();)
 		else if (cmd && cmd->cmd)
 			/* Game command */
-			cmdq_push_repeat(cmd->cmd, count);
+			PROFILE("Game command / cmdq_push_repeat", cmdq_push_repeat(cmd->cmd, count);)
 	} else
 		/* Error */
 		do_cmd_unknown();
@@ -910,9 +911,9 @@ void play_game(enum game_mode_type mode)
 		 * until the command queue is empty and a new player command
 		 * is needed */
 		while (!player->is_dead && player->upkeep->playing) {
-			pre_turn_refresh();
-			cmd_get_hook(CTX_GAME);
-			run_game_loop();
+			PROFILE("pre_turn_refresh()", pre_turn_refresh();)
+			PROFILE("cmd_get_hook(CTX_GAME);", cmd_get_hook(CTX_GAME);)
+			PROFILE("run_game_loop();", run_game_loop();)
 		}
 
 		/* Close game on death or quitting */

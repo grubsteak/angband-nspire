@@ -885,7 +885,7 @@ void update_view(struct chunk *c, struct player *p)
 	mark_wasseen(c);
 
 	/* Calculate light levels */
-	calc_lighting(c, p);
+	PROFILE("calc_lighting(c, p);",calc_lighting(c, p);)
 
 	/* Assume we can view the player grid */
 	sqinfo_on(square(c, p->grid)->info, SQUARE_VIEW);
@@ -906,14 +906,17 @@ void update_view(struct chunk *c, struct player *p)
 	}
 
 	/* Squares we have LOS to get marked as in the view, and perhaps seen */
+	PROFILE("LOS",
 	for (y = 0; y < c->height; y++)
 		for (x = 0; x < c->width; x++)
 			update_view_one(c, loc(x, y), p);
-
+	)
 	/* Update each grid */
+	PROFILE("Update each grid",
 	for (y = 0; y < c->height; y++)
 		for (x = 0; x < c->width; x++)
 			update_one(c, loc(x, y), p);
+	)
 }
 
 

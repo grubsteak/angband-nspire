@@ -96,7 +96,7 @@ static ui_event inkey_aux(int scan_cutoff)
 			Term_xtra(TERM_XTRA_DELAY, 10);
 		}
 	}
-
+	
 	return (ke);
 }
 
@@ -164,7 +164,7 @@ ui_event inkey_ex(void)
 
 	/* Delayed flush */
 	if (inkey_xtra) {
-		Term_flush();
+		PROFILE("Discard keys/Term_flush();",Term_flush();)
 		inkey_next = NULL;
 		inkey_xtra = false;
 	}
@@ -210,7 +210,7 @@ ui_event inkey_ex(void)
 	inkey_next = NULL;
 
 	/* Get the cursor state */
-	(void)Term_get_cursor(&cursor_state);
+	PROFILE("Get the cursor state", (void)Term_get_cursor(&cursor_state);)
 
 	/* Show the cursor if waiting, except sometimes in "command" mode */
 	if (!inkey_scan && (!inkey_flag || screen_save_depth ||
@@ -219,12 +219,13 @@ ui_event inkey_ex(void)
 
 
 	/* Hack -- Activate main screen */
-	Term_activate(term_screen);
+	PROFILE("Activate main screen", Term_activate(term_screen);)
 
 
 	/* Get a key */
 	while (ke.type == EVT_NONE) {
 		/* Hack -- Handle "inkey_scan == SCAN_INSTANT */
+		
 		if (inkey_scan == SCAN_INSTANT &&
 			(0 != Term_inkey(&kk, false, false)))
 			break;
@@ -233,13 +234,13 @@ ui_event inkey_ex(void)
 		/* Hack -- Flush output once when no key ready */
 		if (!done && (0 != Term_inkey(&kk, false, false))) {
 			/* Hack -- activate proper term */
-			Term_activate(old);
+			PROFILE("Activate proper term", Term_activate(old);)
 
 			/* Flush output */
-			Term_fresh();
+			PROFILE("Flush output", Term_fresh();)
 
 			/* Hack -- activate main screen */
-			Term_activate(term_screen);
+			PROFILE("Activate main screen 2", Term_activate(term_screen);)
 
 			/* Mega-Hack -- reset saved flag */
 			character_saved = false;
@@ -253,7 +254,7 @@ ui_event inkey_ex(void)
 
 
 		/* Get a key (see above) */
-		ke = inkey_aux(inkey_scan);
+		PROFILE("ke = inkey_aux(inkey_scan);",ke = inkey_aux(inkey_scan);)
 
 		if (inkey_scan && ke.type == EVT_NONE)
 			/* The keypress timed out. We need to stop here. */
@@ -265,10 +266,10 @@ ui_event inkey_ex(void)
 	}
 
 	/* Hack -- restore the term */
-	Term_activate(old);
+	PROFILE("restore the term",Term_activate(old);)
 
 	/* Restore the cursor */
-	Term_set_cursor(cursor_state);
+	PROFILE("Restore the cursor",Term_set_cursor(cursor_state);)
 
 	/* Cancel the various "global parameters" */
 	inkey_flag = false;
@@ -1723,14 +1724,14 @@ ui_event textui_get_command(int *count)
 		/* Activate "command mode" */
 		inkey_flag = true;
 
-		/* Toggle on cursor if requested */
+		PROFILE("Toggle on cursor", /* Toggle on cursor if requested */
 		if (OPT(player, highlight_player)) {
 			Term_set_cursor(true);
 			move_cursor_relative(player->grid.y, player->grid.x);
-		}
+		})
 
 		/* Get a command */
-		ke = inkey_ex();
+		PROFILE("Get a command", ke = inkey_ex();)
 
 		/* Toggle off cursor */
 		if (OPT(player, highlight_player)) {
@@ -1743,7 +1744,8 @@ ui_event textui_get_command(int *count)
 				case '0': {
 					if(ke.key.mods & KC_MOD_KEYPAD) break;
 
-					int c = textui_get_count();
+					int c;
+					PROFILE("c = textui_get_count();", c = textui_get_count();)
 
 					if (c == -1 || !get_com_ex("Command: ", &ke))
 						continue;
@@ -1770,7 +1772,8 @@ ui_event textui_get_command(int *count)
 
 			/* Find any relevant keymap */
 			if (keymap_ok)
-				act = keymap_find(mode, ke.key);
+				PROFILE("act = keymap_find(mode, ke.key);", act = keymap_find(mode, ke.key);)
+				
 		}
 
 		/* Erase the message line */

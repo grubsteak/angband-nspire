@@ -801,7 +801,7 @@ static errr Term_xtra_gcu_event(int v) {
 		/* Wait for a keypress; use halfdelay(1) so if the user takes more */
 		/* than 0.2 seconds we get a chance to do updates. */
 		halfdelay(2);
-		i = getch();
+		PROFILE("Check for keypresses (halfdelay)", i = getch();)
 		while (i == ERR) {
 			i = getch();
 			idle_update();
@@ -812,7 +812,7 @@ static errr Term_xtra_gcu_event(int v) {
 		nodelay(stdscr, true);
 
 		/* Check for keypresses */
-		i = getch();
+		PROFILE("Check for keypresses (no delay)",i = getch();)
 
 		/* Wait for it next time */
 		nodelay(stdscr, false);
@@ -875,7 +875,7 @@ static errr Term_xtra_gcu_event(int v) {
 	 * available; this seems like an acceptable risk to fix problems associated
 	 * with various terminal emulators (I'm looking at you PuTTY).
 	 */
-	if (i == 27) { /* ESC */
+	PROFILE("second-guess ncurses", if (i == 27) { /* ESC */
 		nodelay(stdscr, true);
 		j = getch();
 		switch (j) {
@@ -905,7 +905,7 @@ static errr Term_xtra_gcu_event(int v) {
 			default: ungetch(j);
 		}
 		nodelay(stdscr, false);
-	}
+	})
 
 #ifdef KEY_DOWN
 	/* Handle arrow keys */
@@ -948,7 +948,7 @@ static errr Term_xtra_gcu_event(int v) {
 #endif
 
 	/* Enqueue the keypress */
-	Term_keypress(i, mods);
+	PROFILE("Enqueue the keypress",Term_keypress(i, mods);)
 
 	/* Success */
 	return (0);
@@ -1079,13 +1079,13 @@ static errr Term_xtra_gcu(int n, int v) {
 		case TERM_XTRA_ALIVE: return Term_xtra_gcu_alive(v);
 
 		/* Process events */
-		case TERM_XTRA_EVENT: return Term_xtra_gcu_event(v);
+		case TERM_XTRA_EVENT: errr res; if(v) PROFILE("Term_xtra_gcu_event(1)", res=Term_xtra_gcu_event(v);) else PROFILE("Term_xtra_gcu_event(0)", res=Term_xtra_gcu_event(v);) return res;
 
 		/* Flush events */
-		case TERM_XTRA_FLUSH: while (!Term_xtra_gcu_event(false)); return 0;
+		case TERM_XTRA_FLUSH: PROFILE("Term_xtra_gcu.TERM_XTRA_FLUSH", while (!Term_xtra_gcu_event(false));) return 0;
 
 		/* Delay */
-		case TERM_XTRA_DELAY: if (v > 0) usleep(1000 * v); return 0;
+		case TERM_XTRA_DELAY: PROFILE("Term_xtra_gcu.TERM_XTRA_DELAY", if (v > 0) usleep(1000 * v);) return 0;
 
 		/* React to events */
 		case TERM_XTRA_REACT: handle_extended_color_tables(); return 0;

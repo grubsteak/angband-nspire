@@ -1572,8 +1572,8 @@ void player_handle_post_move(struct player *p, bool eval_trap,
 	}
 
 	/* Update view and search */
-	update_view(cave, p);
-	search(p);
+	PROFILE("update_view(cave, p);",update_view(cave, p);)
+	PROFILE("search(p);",search(p);)
 }
 
 /*

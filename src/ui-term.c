@@ -2530,7 +2530,7 @@ errr Term_flush(void)
 		return 0;
 
 	/* Hack -- Flush all events */
-	Term_xtra(TERM_XTRA_FLUSH, 0);
+	PROFILE("Flush all events", Term_xtra(TERM_XTRA_FLUSH, 0);)
 
 	/* Forget all keypresses */
 	Term->key_head = Term->key_tail = 0;
