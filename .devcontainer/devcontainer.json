@@ -2,5 +2,6 @@
     "build": {
         "dockerfile": "Dockerfile"
     },
-    "forwardPorts": []
+    "forwardPorts": [],
+    "remoteUser": "ndless"
 }

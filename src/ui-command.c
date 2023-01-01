@@ -175,11 +175,13 @@ void textui_cmd_suicide(void)
 			return;
 
 		/* Special Verification for suicide */
-		prt("Please verify KILLING THIS CHARACTER by typing the '@' sign: ", 0, 0);
-		event_signal(EVENT_INPUT_FLUSH);
-		ch = inkey();
-		prt("", 0, 0);
-		if (ch.code != '@') return;
+		#ifndef _TINSPIRE /* TI-Nspire doesn't have an @ key to input */
+			prt("Please verify KILLING THIS CHARACTER by typing the '@' sign: ", 0, 0);
+			event_signal(EVENT_INPUT_FLUSH);
+			ch = inkey();
+			prt("", 0, 0);
+			if (ch.code != '@') return;
+		#endif
 	}
 
 	cmdq_push(CMD_SUICIDE);

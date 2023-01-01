@@ -1,0 +1,64 @@
+#!/bin/sh
+
+localhost=host.docker.internal
+root='\\wsl.localhost\Debian\home\grubsteak\src\angband-nspire\src\nspire\installer\'
+rdebug_port=3334
+
+print_usage() {
+    echo "Usage: "`basename $0`" [option] <file.tns> [<destdir>]"
+    echo -e "\t-p [port]: Firebird remote debug port (default: $rdebug_port)"
+    echo -e "\t-h: display this very helpful message"
+}
+
+while getopts ":p:h" opt; do
+    case $opt in
+        p)
+            rdebug_port="$OPTARG"
+            ;;
+        h)
+            print_usage
+            exit 0
+            ;;
+        \?)
+            echo "Invalid option: -$OPTARG"
+            exit 1
+            ;;
+        :)
+            echo "Option -$OPTARG requires an argument."
+            print_usage
+            exit 1
+            ;;
+    esac
+done
+shift $((OPTIND-1))
+
+if [ $# -ne 1 -a $# -ne 2 ]; then
+    print_usage
+    exit 0
+fi
+if [ ! -f "$1" ]; then
+    echo "File not found: $1"
+    exit 1
+fi
+
+abs_tns_path=${root}$1 # "$(cd "$(dirname "$1")" && pwd)/$(basename "$1")"
+cat <<EOT
+${abs_tns_path}
+EOT
+
+if [ $# -ge 2 ]; then
+    st_cmd="ln st $2"
+fi
+
+NC_ARGS=
+nc -c 2>&1 | grep -q "missing hostname" && NC_ARGS="-c"
+nc -q 0 2>&1 | grep -q "invalid option" || NC_ARGS="-q 0"
+nc ${NC_ARGS} ${localhost} "$rdebug_port" <<EOT
+$st_cmd
+ln s ${abs_tns_path}
+EOT
+ret=$?
+if [ $ret -ne 0 ]; then
+    echo "Error: couldn't connect to Firebird."
+    exit 1
+fi

@@ -121,7 +121,10 @@ void safe_setuid_grab(void)
 static void path_parse(char *buf, size_t max, const char *file)
 {
 	/* Accept the filename */
-	my_strcpy(buf, file, max);
+	my_strcpy(buf, file, max);	
+#ifdef _TINSPIRE /* Every file on TI-Nspire ends with .tns */
+	strncat(buf, ".tns", max);
+#endif
 }
 
 
@@ -866,8 +869,17 @@ bool file_move(const char *fname, const char *newname)
 
 bool file_exists(const char *fname)
 {
+#ifdef _TINSPIRE
+	char buf[512];
+	buf[511] = '\0';
+	path_parse(&buf, sizeof(buf), fname);
+	struct stat st;
+	return (stat((const char*)&buf, &st) == 0);
+#else
 	struct stat st;
 	return (stat(fname, &st) == 0);
+#endif
+
 }
 
 #elif defined(WINDOWS)
@@ -987,6 +999,7 @@ ang_file *file_open(const char *fname, file_mode mode, file_type ftype)
 
 	switch (mode) {
 		case MODE_WRITE: { 
+			#ifndef _TINSPIRE
 			if (ftype == FTYPE_SAVE) {
 				/* open only if the file does not exist */
 				int fd;
@@ -997,7 +1010,9 @@ ang_file *file_open(const char *fname, file_mode mode, file_type ftype)
 				} else {
 					f->fh = fdopen(fd, "wb");
 				}
-			} else {
+			} else
+			#endif
+			 {
 				f->fh = fopen(buf, "wb");
 			}
 			break;

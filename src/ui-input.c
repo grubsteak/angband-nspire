@@ -1372,6 +1372,11 @@ void pause_line(struct term *tm)
 {
 	prt("", tm->hgt - 1, 0);
 	put_str("[Press any key to continue]", tm->hgt - 1, (tm->wid - 27) / 2);
+	
+	#ifdef _TINSPIRE /* For some reason it needs this here */
+	event_signal(EVENT_REFRESH);
+	#endif 
+	
 	(void)anykey();
 	prt("", tm->hgt - 1, 0);
 }

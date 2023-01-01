@@ -1,14 +1,34 @@
 MKPATH=../mk/
 MAKE = make -f Makefile.nsp # buildsys does some funny business
+ANGBAND_ZIP = nspire/installer/angband.zip
 include $(MKPATH)buildsys.mk
+include Makefile.src
+
+
 
 # make Nspire installer
 post-all:
-	cd nspire/installer && make
+	cd nspire/installer && make $(SEND_PROG)
 
+angband.tns: angband
+	echo $@ - $^
+	cd nspire/installer && make ../../$@
+
+$(ANGBAND_ZIP): angband
+	cd nspire/installer && make `basename $PWD/$@`
+
+send: $(ANGBAND_ZIP)
+	echo $@ - $^
+	cd nspire/installer && make send
+
+send-prog: angband.tns
+	cd nspire/installer && make send-prog
+
+debug:
+	arm-none-eabi-gdb -q -ex "target remote host.docker.internal:3333" -ex "c" ./angband
 
 # import source list
-include Makefile.src
+
 INCLUDE = $(HDRS) $(INCS)
 OBJECTS = $(ANGFILES) $(ZFILES) nspire/nspire_fill.o
 SRCS    = ${OBJECTS:.o=.c} ${MAINFILES:.o=.c}
@@ -16,7 +36,11 @@ PROG    = $(PROGNAME)$(PROG_SUFFIX)
 # Will dynamically generate version.h with the build number.
 CFLAGS += -DHAVE_VERSION_H
 
-CFLAGS += -I. -fPIC -std=c99 -O0
+# This is to help during debugging
+# CFLAGS += -g -fno-omit-frame-pointer
+
+
+CFLAGS += -I. -fPIC -std=c99 -Ofast
 # Replace above line with the two below and then look at gmon.out
 # to do performance monitoring
 # CFLAGS += -g -pg -I. -fPIC -std=c99 -O0
@@ -26,11 +50,12 @@ CFLAGS += -I. -fPIC -std=c99 -O0
 GCOBJS = $(OBJECTS:.o=.gcno) $(OBJECTS:.o=.gcda)
 GCOVS = $(OBJECTS:.o=.c.gcov)
 
-CLEAN = angband.o $(OBJECTS) win/angband.res version.h
+CLEAN = angband.o $(OBJECTS) win/angband.res version.h angband.tns \
+	./nspire/installer/angband-installer.tns ./nspire/installer/angband.tns ./nspire/installer/angband.zip.tns ./nspire/installer/angband.zip
 DISTCLEAN = autoconf.h tests/.deps
 
 $(PROG): $(PROGNAME).o $(MAINFILES)
-	$(CC) -o $@ $(PROGNAME).o $(MAINFILES) $(LDFLAGS) $(LDADD) $(LIBS)
+	$(CC) -o $@ $(PROGNAME).o  $(MAINFILES) $(LDFLAGS) $(LDADD) $(LIBS)
 	@printf "%10s %-20s\n" LINK $@
 
 win/$(PROGNAME).res: win/$(PROGNAME).rc
@@ -51,9 +76,10 @@ test-depgen:
 test-clean:
 	env RM="$(RM)" $(MAKE) -C tests clean
 
+################# TODO: delete this vvvvv #############################
 # Hack to descend into tests and clean since it isn't included in SUBDIRS.
-pre-clean: test-clean
-
+#pre-clean:
+#
 # Track the build number in the dynamically generated file, version.h.
 # Use INSTALL_STATUS/INSTALL_OK from buildsys in lieu of something more
 # appropriate for automatically generated source files.
@@ -79,8 +105,9 @@ version.h: FORCE
 # depends on it.
 buildid.o: version.h
 
-splint:
-	splint -f .splintrc ${OBJECTS:.o=.c} main.c main-gcu.c
+# TODO DELETE THIS
+# splint:
+# 	splint -f .splintrc ${OBJECTS:.o=.c} main.c main-gcu.c
 
 clean-coverage:
 	rm -f tests/ran-already
@@ -133,4 +160,4 @@ post-install:
 	fi
 
 FORCE :
-.PHONY : tests coverage clean-coverage tests/ran-already
+.PHONY : tests coverage clean-coverage tests/ran-already debug
