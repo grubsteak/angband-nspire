@@ -53,7 +53,7 @@ Release/
 src/**/*.d
 src/**/*.o
 src/*.d
-src/*.dep
+src/**/*.dep
 src/*.o
 src/*.o.*
 src/.deps
@@ -66,3 +66,5 @@ src/config
 src/stats/db.dep
 src/tests/ran-already
 src/version.h
+src/**/*.tns
+src/nspire/installer/angband.zip
