@@ -491,7 +491,7 @@ int main(int argc, char *argv[])
 	/* If we were told which mode to use, then use it */
 	if (mstr)
 		ANGBAND_SYS = mstr;
-#if !defined(WINDOWS) && !defined(DJGPP)
+#if !defined(WINDOWS) && !defined(DJGPP) && !defined(_TINSPIRE)
 	if (setlocale(LC_CTYPE, "")) {
 		/* Require UTF-8 */
 		if (!streq(nl_langinfo(CODESET), "UTF-8"))
