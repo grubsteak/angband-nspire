@@ -6,5 +6,3 @@ CFLAGS='-DPRIVATE_USER_PATH=\"/documents/lib/dumps/\"' \
  vardatadir=$(ANGBAND_FOLDER) \
  CC=nspire-gcc \
     ./configure --host=arm-none-eabi --with-no-install;
-
-cd src; make -f Makefile.nsp -j8
