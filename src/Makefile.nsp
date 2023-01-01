@@ -105,10 +105,6 @@ version.h: FORCE
 # depends on it.
 buildid.o: version.h
 
-# TODO DELETE THIS
-# splint:
-# 	splint -f .splintrc ${OBJECTS:.o=.c} main.c main-gcu.c
-
 clean-coverage:
 	rm -f tests/ran-already
 	rm -f $(GCOVS) $(GCOBJS)
