@@ -1,8 +1,6 @@
-ANGBAND_FOLDER=/documents/lib
+#!/bin/bash
+
 autoreconf -fi;
-CFLAGS='-DPRIVATE_USER_PATH=\"/documents/lib/dumps/\"' \
- configdir=$(ANGBAND_FOLDER) \
- libdatadir=$(ANGBAND_FOLDER) \
- vardatadir=$(ANGBAND_FOLDER) \
- CC=nspire-gcc \
+CFLAGS='-DPRIVATE_USER_PATH=\"/documents/lib/dumps/\" -DDEFAULT_CONFIG_PATH=\"/documents/lib\" -DDEFAULT_LIB_PATH=\"/documents/lib\" -DDEFAULT_DATA_PATH=\"/documents/lib\"' \
+    CC=nspire-gcc \
     ./configure --host=arm-none-eabi --with-no-install;

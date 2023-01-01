@@ -4,8 +4,6 @@ ANGBAND_ZIP = nspire/installer/angband.zip
 include $(MKPATH)buildsys.mk
 include Makefile.src
 
-
-
 # make Nspire installer
 post-all:
 	cd nspire/installer && make $(SEND_PROG)
@@ -39,8 +37,13 @@ CFLAGS += -DHAVE_VERSION_H
 # This is to help during debugging
 # CFLAGS += -g -fno-omit-frame-pointer
 
+ifeq ($(DEBUG),Y)
+	CFLAGS  += -g -Wall
+else
+	CFLAGS += -Ofast
+endif
 
-CFLAGS += -I. -fPIC -std=c99 -Ofast
+CFLAGS += -I. -fPIC -std=c99
 # Replace above line with the two below and then look at gmon.out
 # to do performance monitoring
 # CFLAGS += -g -pg -I. -fPIC -std=c99 -O0
