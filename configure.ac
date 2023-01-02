@@ -26,7 +26,8 @@ AC_ARG_WITH(private_dirs,
 	[AS_HELP_STRING([--with-private-dirs], [use private scorefiles/savefiles])])
 AC_ARG_WITH(no_install,
 	[AS_HELP_STRING([--with-no-install], [don't install, just run in-place])])
-
+AC_ARG_WITH(nspire_install,
+	[AS_HELP_STRING([--with-nspire-install], [use TI-Nspire directory structure])])
 if test "x$with_setgid" = "xyes"; then
 	AC_MSG_ERROR([Please specify a group to install as.])
 fi
@@ -202,6 +203,8 @@ fi
 
 if test "x$with_no_install" != "x"; then
 	configpath="${PWD}/lib/"
+elif test "x$with_nspire_install" != "x"; then
+	configpath="/documents/lib/"
 else
 	configpath="${sysconfdir}/${PACKAGE}/"
 fi
@@ -215,6 +218,8 @@ esac
 if test "x$with_no_install" != "x"; then
 	libpath="${PWD}/lib/"
 	bindir=".."
+elif test "x$with_nspire_install" != "x"; then
+	libpath="/documents/lib/"
 else
 	libpath="${datarootdir}/${PACKAGE}/"
 fi
@@ -240,6 +245,8 @@ esac
 
 if test "x$with_no_install" != "x"; then
 	varpath="${PWD}/lib/"
+elif test "x$with_nspire_install" != "x"; then
+	varpath="/documents/lib/"
 else
 	varpath="${localstatedir}/games/${PACKAGE}/"
 fi
@@ -248,6 +255,7 @@ case "/$varpath" in
 	*/) MY_EXPAND_DIR(vardatadir, "$varpath")  ;;
 	*)  MY_EXPAND_DIR(vardatadir, "$varpath/") ;;
 esac
+
 if test "x$with_private_dirs" != "x"; then
 	varshareddatadir="${vardatadir}user/"
 else
