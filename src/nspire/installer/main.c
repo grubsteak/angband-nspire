@@ -157,4 +157,5 @@ int main(int argc, char **argv) {
 	remove(argv[0]);
     printf("Done.\n");
     show_msgbox("Angband Installer", "Angband installed!");
+    refresh_osscr(); // refresh document screen
 }

@@ -1,7 +1,7 @@
 #!/bin/sh
 
 localhost=host.docker.internal
-root='\\wsl.localhost\Debian\home\grubsteak\src\angband-nspire\src\nspire\installer\'
+root='\\wsl.localhost\Debian\home\grubsteak\src\angband-nspire-dev\angband-nspire\src\nspire\installer\'
 rdebug_port=3334
 
 print_usage() {
