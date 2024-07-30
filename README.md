@@ -1,4 +1,8 @@
-# Angband 4.2.4
+
+# Angband 4.2.4 for TI-Nspire
+* **DEVELOPMENT**: [Open this repository inside of a VSCode Dev Container,](https://code.visualstudio.com/docs/devcontainers/containers#_quick-start-open-an-existing-folder-in-a-container) then go out for lunch while you wait for the Ndless toolchain to build.
+
+#
 
 <p align="center">
   <img src="screenshots/title.png" width="425"/>
