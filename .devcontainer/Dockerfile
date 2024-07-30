@@ -27,4 +27,4 @@ RUN su ndless -c "cd ~/Ndless/; find . -name '*' -exec sed -i -e 's/string_free/
 
 RUN su ndless -c "cd ~; git clone https://github.com/grubsteak/nSDL.git; cd nSDL; make install -j8"
 RUN su ndless -c "cd ~; git clone https://github.com/grubsteak/PDCurses-nspire.git; cd PDCurses-nspire/nspire; make install -j8"
-RUN su ndless -c "cd /workspace/angband-nspire/; ./configure-nspire.sh; make"
+RUN su ndless -c "cd /workspace/angband-nspire/; ./configure-nspire.sh; cd src/; make -f Makefile.nsp -j8"
