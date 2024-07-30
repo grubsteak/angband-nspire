@@ -17,4 +17,4 @@ jobs:
         uses: devcontainers/ci@v0.3
         with:
           # Change this to be your CI task/script
-          runCmd: cd /workspace/angband-nspire/; ./configure-nspire.sh; cd src/; make -f Makefile.nsp -j8
+          runCmd: cd ~; git clone https://github.com/grubsteak/angband-nspire.git;cd angband-nspire; ./configure-nspire.sh; cd src/; make -f Makefile.nsp -j8
