@@ -9,12 +9,20 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-
-      - name: Checkout (GitHub)
-        uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
       - name: Build and run dev container task
         uses: devcontainers/ci@v0.3
         with:
           push: never # never push docker image
-          runCmd: cd ~; git clone https://github.com/grubsteak/angband-nspire.git;cd angband-nspire; ./configure-nspire.sh; cd src/; make -f Makefile.nsp -j8
+          runCmd: ./configure-nspire.sh; cd src/; make -f Makefile.nsp -j8
+
+      - name: Upload artifacts
+              uses: actions/upload-artifact@v3
+              with:
+                name: nspire-files
+                path: |
+                  src/nspire/installer/angband-installer.tns
+                  src/nspire/installer/angband.zip
+                if-no-files-found: error # This will cause the workflow to fail if the files are not found
