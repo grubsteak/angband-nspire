@@ -21,8 +21,6 @@ jobs:
       - name: Upload artifacts
         uses: actions/upload-artifact@v3
         with:
-          name: nspire-files
-          path: |
-            src/nspire/installer/angband-installer.tns
-            src/nspire/installer/angband.zip
+          name: Angband Installer (Ndless application)
+          path: src/nspire/installer/angband-installer.tns
           if-no-files-found: error # This will cause the workflow to fail if the files are not found
