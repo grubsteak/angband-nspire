@@ -1,6 +1,7 @@
 
 # Angband 4.2.4 for TI-Nspire
 * **DEVELOPMENT**: [Open this repository inside of a VSCode Dev Container,](https://code.visualstudio.com/docs/devcontainers/containers#_quick-start-open-an-existing-folder-in-a-container) then go out for lunch while you wait for the Ndless toolchain to build.
+* **DOWNLOADS**: [To get the latest build, go to the build action, select the lastest run, and retrieve the latest build of the game from the download at the bottom.](https://github.com/grubsteak/angband-nspire/actions/workflows/nspire.yaml) Keep in mind you must have [Ndless](https://ndless.me/#features) installed on your TI-Nspire calculator.
 
 #
 
